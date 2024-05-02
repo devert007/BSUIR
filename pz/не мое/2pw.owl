@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#letters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#letters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#letters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#letters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#divide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#divide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#letters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#letters"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#multiply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#multiply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#numbers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#numbers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#operations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#operations"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#plus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#plus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#pow2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#pow2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#pow3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#pow3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#-9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#-9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#numbers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#numbers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#27 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#27">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#numbers"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#a"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#b"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#c"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#d"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#-9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#-9"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/1/untitled-ontology-13#27"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-19"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-19">
+    <Prefix name="" IRI="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-19/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Внутренние_планеты"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ганимеда"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Земля"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Меркурий"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Планеты"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Планеты_земной_группы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Сатурн"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Солнечная_Система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Солнце"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Титан"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Юпитер"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#видимая_звездная_величина"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#вторая_космическая_скорость"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#звездные_сутки"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#масса_планеты"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#орбита"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#период_обращения"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#плотность_Земли"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#радиус"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#радиус_Ганимеды"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#радиус_Титана"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#солнечные_сутки"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#спутники"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#средняя_плотность"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ускорение_свободного_падения"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#числа"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#-1.9-5.5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#176_земных_суток"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2439,7_(_+-1_)км"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3.3_*_1023_кг"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3.70_м/с2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#4.25_км/с"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#5.43_г/см3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#56,65_земных_суток"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#88_cуток"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_меньше"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеет"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеет_значение"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеет_орбиту"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#лежит_в_орбите"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#относится"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#является_одной_из"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#являться_самой_маленькой_из"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#быть"/>
+            <Class IRI="#Солнце"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#видимая_звездная_величина"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#вторая_космическая_скорость"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#масса_планеты"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#орбита"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#период_обращения"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#радиус"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#средняя_плотность"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#ускорение_свободного_падения"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#является_одной_из"/>
+            <Class IRI="#Планеты"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Меркурий"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#являться_самой_маленькой_из"/>
+            <Class IRI="#Планеты_земной_группы"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Сатурн"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#Титан"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Юпитер"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет"/>
+            <Class IRI="#Ганимеда"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#видимая_звездная_величина"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#-1.9-5.5"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#вторая_космическая_скорость"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#4.25_км/с"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#звездные_сутки"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#56,65_земных_суток"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#масса_планеты"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#3.3_*_1023_кг"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#орбита"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#лежит_в_орбите"/>
+            <Class IRI="#Земля"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#период_обращения"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#88_cуток"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#плотность_Земли"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#относится"/>
+            <Class IRI="#Земля"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#радиус"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#быть_меньше"/>
+            <Class IRI="#радиус_Ганимеды"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#радиус"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#быть_меньше"/>
+            <Class IRI="#радиус_Титана"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#радиус"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#2439,7_(_+-1_)км"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#радиус_Ганимеды"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#относится"/>
+            <Class IRI="#Ганимеда"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#радиус_Титана"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#относится"/>
+            <Class IRI="#Титан"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#солнечные_сутки"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#176_земных_суток"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#средняя_плотность"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#быть_меньше"/>
+            <Class IRI="#плотность_Земли"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#средняя_плотность"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#5.43_г/см3"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ускорение_свободного_падения"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_значение"/>
+            <Class IRI="#3.70_м/с2"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Внутренние_планеты"/>
+        <Class IRI="#Планеты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ганимеда"/>
+        <Class IRI="#спутники"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Земля"/>
+        <Class IRI="#Планеты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Меркурий"/>
+        <Class IRI="#Внутренние_планеты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Планеты"/>
+        <Class IRI="#Солнечная_Система"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Планеты_земной_группы"/>
+        <Class IRI="#Планеты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Сатурн"/>
+        <Class IRI="#Планеты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Солнце"/>
+        <Class IRI="#Солнечная_Система"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Титан"/>
+        <Class IRI="#спутники"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Юпитер"/>
+        <Class IRI="#Планеты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#видимая_звездная_величина"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#вторая_космическая_скорость"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#звездные_сутки"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#масса_планеты"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#орбита"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#период_обращения"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#плотность_Земли"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#радиус"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#радиус_Ганимеды"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#радиус_Титана"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#солнечные_сутки"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#спутники"/>
+        <Class IRI="#Планеты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#средняя_плотность"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ускорение_свободного_падения"/>
+        <Class IRI="#числа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#-1.9-5.5"/>
+        <Class IRI="#видимая_звездная_величина"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#176_земных_суток"/>
+        <Class IRI="#солнечные_сутки"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2439,7_(_+-1_)км"/>
+        <Class IRI="#радиус"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3.3_*_1023_кг"/>
+        <Class IRI="#масса_планеты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3.70_м/с2"/>
+        <Class IRI="#ускорение_свободного_падения"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#4.25_км/с"/>
+        <Class IRI="#вторая_космическая_скорость"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#5.43_г/см3"/>
+        <Class IRI="#средняя_плотность"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#56,65_земных_суток"/>
+        <Class IRI="#звездные_сутки"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#88_cуток"/>
+        <Class IRI="#период_обращения"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеет_орбиту"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#быть</IRI>
+        <Literal>является самой близкой к</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#спутники</IRI>
+        <Literal>Спутники</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#числа</IRI>
+        <Literal>Физические данные</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#88_cуток</IRI>
+        <Literal>88 земных суток</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_ближайшей -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_ближайшей">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#ближайший_к_Солнцу"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_меньше -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_меньше">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#плотность_Земли"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:label>быть_незначительно_меньше</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_спутником -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_спутником">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_спутником"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Planet"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#бытьСамойМаленькой -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#бытьСамойМаленькой">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#самая_маленькая"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_ближайшего -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_ближайшего">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_время_суток -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_время_суток">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#солнечные_сутки"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#время_суток(земные)"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_массу -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_массу">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_орбиту -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_орбиту">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#лежать_внутри_орбиты_Земли"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_радиус -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_радиус">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#радиус"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_спутник -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_спутник">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_спутник"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Satellite"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_среднюю_плотность -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_среднюю_плотность">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#средняя_плотность"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметьЗвезднуюВеличину -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметьЗвезднуюВеличину">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Звездная_величина"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:label>иметь_звездную_величину</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметьПериодОбращения -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметьПериодОбращения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#периодОбращения"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label>иметь_период_обращения</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Звездная_величина -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Звездная_величина">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>-1.9 до 5.5</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#ближайший -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#ближайший">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#ближайший_к_Солнцу -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#ближайший_к_Солнцу">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#вторая_космическая_скорость -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#вторая_космическая_скорость">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>4.25 км/с</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#лежать_внутри_орбиты_Земли -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#лежать_внутри_орбиты_Земли">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#масса -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#масса">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>3.3*1023 кг</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#периодОбращения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#периодОбращения">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>88</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#плотность_Земли -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#плотность_Земли">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#радиус -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#радиус">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>2439,7 +- 1 км</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#самая_маленькая -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#самая_маленькая">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#солнечные_сутки -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#солнечные_сутки">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>176</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#средняя_плотность -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#средняя_плотность">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>5,43 г/см^3</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#ускорение_свободного_падения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#ускорение_свободного_падения">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>3.70 м/с^2</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#время_суток(земные) -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#время_суток(земные)">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>58,65</rdfs:comment>
+        <rdfs:label>звездные сутки</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Mercury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Mercury">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_ближайшей"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Star"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#самая_маленькая"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#PlanetOfEarthGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Planet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Planet">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_спутник"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Satellite"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Звездная_величина"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#вторая_космическая_скорость"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#периодОбращения"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#солнечные_сутки"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#средняя_плотность"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#ускорение_свободного_падения"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#время_суток(земные)"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Solar_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#PlanetOfEarthGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#PlanetOfEarthGroup">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#лежать_внутри_орбиты_Земли"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Planet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Satellite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Satellite">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#быть_спутником"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Planet"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Planet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Solar_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Solar_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Star -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Star">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#иметь_ближайшего"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Mercury"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Solar_System"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Ганимеда -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Ганимеда">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Satellite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Сатурн -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Сатурн">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Planet"/>
+        <rdfs:label>Сатурн</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Солнце -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Солнце">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Star"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Титан -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Титан">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Satellite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Юпитер -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Юпитер">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5#Planet"/>
+        <rdfs:label>Юпитер</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

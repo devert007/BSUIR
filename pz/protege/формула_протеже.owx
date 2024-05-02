@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-16"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-16">
+    <Prefix name="" IRI="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-16/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#b2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#b3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#letters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numbers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pow3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#правая_часть"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#умножение"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#(a+b)3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2_степень"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3a2b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3ab2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a+b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#возведение_в_3_степень"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#возведение_в_3степень"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#возведение_в_степень"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#сумма"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#сумма_правой_части"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#умножение"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#a3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#b3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#(a+b)3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#3*a*b"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#3*a*b2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#a+b"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#a3+b3+3a2b+3ab2"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#a2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#возведение_в_3_степень"/>
+            <Class IRI="#a"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#a3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#возведение_в_3степень"/>
+            <Class IRI="#a"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#b2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#возведение_в_3_степень"/>
+            <Class IRI="#b"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#b3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#возведение_в_3степень"/>
+            <Class IRI="#b"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#sum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#сумма"/>
+            <Class IRI="#a"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#sum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#сумма"/>
+            <Class IRI="#b"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#правая_часть"/>
+        <Class IRI="#(a+b)3"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#правая_часть"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#сумма_правой_части"/>
+            <Class IRI="#a3"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#правая_часть"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#сумма_правой_части"/>
+            <Class IRI="#b3"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#правая_часть"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#сумма_правой_части"/>
+            <Class IRI="#3a2b"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#правая_часть"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#сумма_правой_части"/>
+            <Class IRI="#3ab2"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#умножение"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#умножение"/>
+            <Class IRI="#a"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#умножение"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#умножение"/>
+            <Class IRI="#b"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#умножение"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#3*a*b"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#умножение"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#3*a*b2"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#(a+b)3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#возведение_в_3степень"/>
+            <Class IRI="#a+b"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#3a2b"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#умножение"/>
+            <Class IRI="#a2"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#3a2b"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#умножение"/>
+            <Class IRI="#b"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#3a2b"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#умножение"/>
+            <Class IRI="#3"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#3ab2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#умножение"/>
+            <Class IRI="#a"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#3ab2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#умножение"/>
+            <Class IRI="#b2"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#3ab2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#умножение"/>
+            <Class IRI="#3"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#a+b"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#a+b"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#a"/>
+        <Class IRI="#letters"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a2"/>
+        <Class IRI="#2_степень"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a3"/>
+        <Class IRI="#pow3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#b"/>
+        <Class IRI="#letters"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#b2"/>
+        <Class IRI="#2_степень"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#b3"/>
+        <Class IRI="#pow3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pow3"/>
+        <Class IRI="#functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sum"/>
+        <Class IRI="#functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#правая_часть"/>
+        <Class IRI="#sum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#умножение"/>
+        <Class IRI="#functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#(a+b)3"/>
+        <Class IRI="#pow3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2_степень"/>
+        <Class IRI="#functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3"/>
+        <Class IRI="#numbers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3a2b"/>
+        <Class IRI="#умножение"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3ab2"/>
+        <Class IRI="#умножение"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a+b"/>
+        <Class IRI="#sum"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#возведение_в_степень"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#возведение_в_3_степень"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#возведение_в_степень"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#сумма"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#сумма_правой_части"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#умножение"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#возведение_в_3_степень"/>
+        <Class IRI="#a"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#возведение_в_3_степень"/>
+        <Class IRI="#b"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#возведение_в_3степень"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#a3"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#возведение_в_3степень"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#b3"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#возведение_в_степень"/>
+        <Class IRI="#pow3"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#сумма"/>
+        <Class IRI="#sum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#сумма_правой_части"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#a3+b3+3a2b+3ab2"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#умножение"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#3*a*b"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#умножение"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#3*a*b2"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#возведение_в_степень"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#сумма"/>
+            <Class IRI="#pow3"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#сумма"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#a+b"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a3"/>
+        <Class IRI="#a"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#b3"/>
+        <Class IRI="#b"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#(a+b)3"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#a+b"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#3*a*b"/>
+        <Class IRI="#b"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#3*a*b"/>
+        <Class IRI="#3"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#3*a*b"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#возведение_в_3_степень"/>
+            <Class IRI="#a"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#3*a*b2"/>
+        <Class IRI="#a"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#3*a*b2"/>
+        <Class IRI="#3"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#3*a*b2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#возведение_в_3_степень"/>
+            <Class IRI="#b"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a+b"/>
+        <Class IRI="#a"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a+b"/>
+        <Class IRI="#b"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a3+b3+3a2b+3ab2"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#a3"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a3+b3+3a2b+3ab2"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#b3"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a3+b3+3a2b+3ab2"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#3*a*b"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a3+b3+3a2b+3ab2"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#3*a*b2"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#a3"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#b3"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#(a+b)3"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#3*a*b"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#3*a*b2"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#a+b"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#a3+b3+3a2b+3ab2"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pow3</IRI>
+        <Literal>3 степень</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#возведение_в_3_степень</IRI>
+        <Literal>возведение_во_2_степень</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#возведение_в_степень</IRI>
+        <Literal>(a+b)^3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#сумма</IRI>
+        <Literal>сумма (a+b)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#3*a*b</IRI>
+        <Literal>3*a2*b</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

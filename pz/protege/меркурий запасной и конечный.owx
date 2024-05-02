@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/devert/ontologies/2024/1/untitled-ontology-5/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Mercury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlanetOfEarthGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satellite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solar_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Star"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_ближайшей"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_меньше"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_спутником"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#бытьСамойМаленькой"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_ближайшего"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_время_суток"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_массу"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_орбиту"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_радиус"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_спутник"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_среднюю_плотность"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметьЗвезднуюВеличину"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметьПериодОбращения"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Звездная_величина"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ближайший"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ближайший_к_Солнцу"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#вторая_космическая_скорость"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#лежать_внутри_орбиты_Земли"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#масса"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#периодОбращения"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#плотность_Земли"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#радиус"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#самая_маленькая"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#солнечные_сутки"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#средняя_плотность"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ускорение_свободного_падения"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#время_суток(земные)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ганимеда"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сатурн"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Солнце"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Титан"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Юпитер"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Mercury"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#быть_ближайшей"/>
+            <Class IRI="#Star"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Mercury"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#самая_маленькая"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Planet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#иметь_спутник"/>
+            <Class IRI="#Satellite"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Planet"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Звездная_величина"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Planet"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#вторая_космическая_скорость"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Planet"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#периодОбращения"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Planet"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#солнечные_сутки"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Planet"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#средняя_плотность"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Planet"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#ускорение_свободного_падения"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Planet"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#время_суток(земные)"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PlanetOfEarthGroup"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#лежать_внутри_орбиты_Земли"/>
+            <Datatype abbreviatedIRI="owl:real"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Satellite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#быть_спутником"/>
+            <Class IRI="#Planet"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Star"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#иметь_ближайшего"/>
+            <Class IRI="#Mercury"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Mercury"/>
+        <Class IRI="#PlanetOfEarthGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planet"/>
+        <Class IRI="#Solar_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlanetOfEarthGroup"/>
+        <Class IRI="#Planet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satellite"/>
+        <Class IRI="#Planet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Star"/>
+        <Class IRI="#Solar_System"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Ганимеда"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Сатурн"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Star"/>
+        <NamedIndividual IRI="#Солнце"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Титан"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Юпитер"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#быть"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#быть_ближайшей"/>
+        <ObjectProperty IRI="#быть"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#быть_меньше"/>
+        <ObjectProperty IRI="#быть"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#быть_спутником"/>
+        <ObjectProperty IRI="#быть"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#бытьСамойМаленькой"/>
+        <ObjectProperty IRI="#быть"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_ближайшего"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_время_суток"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_массу"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_орбиту"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_радиус"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_спутник"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_среднюю_плотность"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметьЗвезднуюВеличину"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметьПериодОбращения"/>
+        <ObjectProperty IRI="#иметь"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#быть_ближайшей"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#ближайший_к_Солнцу"/>
+            <Datatype abbreviatedIRI="owl:real"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#быть_меньше"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#плотность_Земли"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#быть_спутником"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#быть_спутником"/>
+            <Class IRI="#Planet"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#бытьСамойМаленькой"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#самая_маленькая"/>
+            <Datatype abbreviatedIRI="owl:real"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_время_суток"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#солнечные_сутки"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_время_суток"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#время_суток(земные)"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_орбиту"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#лежать_внутри_орбиты_Земли"/>
+            <Datatype abbreviatedIRI="owl:real"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_радиус"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#радиус"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_среднюю_плотность"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#средняя_плотность"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметьЗвезднуюВеличину"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Звездная_величина"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_спутник"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#иметь_спутник"/>
+            <Class IRI="#Satellite"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметьПериодОбращения"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#периодОбращения"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#самая_маленькая"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#Звездная_величина"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ближайший"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ближайший_к_Солнцу"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#вторая_космическая_скорость"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#лежать_внутри_орбиты_Земли"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#масса"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#периодОбращения"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#плотность_Земли"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#радиус"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#солнечные_сутки"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#средняя_плотность"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ускорение_свободного_падения"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#время_суток(земные)"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Звездная_величина</IRI>
+        <Literal>-1.9 до 5.5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Сатурн</IRI>
+        <Literal>Сатурн</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Юпитер</IRI>
+        <Literal>Юпитер</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#быть_меньше</IRI>
+        <Literal>быть_незначительно_меньше</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#вторая_космическая_скорость</IRI>
+        <Literal>4.25 км/с</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#иметьЗвезднуюВеличину</IRI>
+        <Literal>иметь_звездную_величину</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#иметьПериодОбращения</IRI>
+        <Literal>иметь_период_обращения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#масса</IRI>
+        <Literal>3.3*1023 кг</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#периодОбращения</IRI>
+        <Literal>88</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#радиус</IRI>
+        <Literal>2439,7 +- 1 км</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#солнечные_сутки</IRI>
+        <Literal>176</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#средняя_плотность</IRI>
+        <Literal>5,43 г/см^3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ускорение_свободного_падения</IRI>
+        <Literal>3.70 м/с^2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#время_суток(земные)</IRI>
+        <Literal>58,65</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#время_суток(земные)</IRI>
+        <Literal>звездные сутки</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
