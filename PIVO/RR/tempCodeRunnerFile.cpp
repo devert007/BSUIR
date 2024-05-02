@@ -1,0 +1,1 @@
+ cout << g.is_planar();
