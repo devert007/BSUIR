@@ -1,0 +1,7 @@
+Kislitsyn 321702 Minsk 10
+Typoshko 321703 Grodno 10
+Pushechka 321701 Mogilev 8.6
+Igor 321703 Vitebsk 4.5
+Petr 321701 Ryazan 6.7
+Typichko 321704 Baranovichi 5.6
+Kisly 321701 Minsk 9
