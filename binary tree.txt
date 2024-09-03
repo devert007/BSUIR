@@ -1,0 +1,127 @@
+#include <iostream>
+using namespace std;
+
+struct Node {
+    Node* right, * left;
+    int info;
+};
+
+Node* root;
+
+Node* pushInTree(Node* root, int info) {
+    if (root == nullptr) {
+        Node* newNode = new Node();
+        newNode->info = info;
+        newNode->left = nullptr;
+        newNode->right = nullptr;
+        return newNode;
+    }
+    else {
+        if (info < root->info) {
+            root->left = pushInTree(root->left, info);
+        }
+        else {
+            root->right = pushInTree(root->right, info);
+        }
+    }
+    return root;
+}
+
+void printTree(Node* root, int level = 0) {
+    if (root == nullptr) return;
+    printTree(root->right, level + 1);
+    for (int i = 0; i < level; i++) {
+        cout << "    ";
+    }
+    cout << root->info << "\n";
+    printTree(root->left, level + 1);
+}
+
+Node* searchMaxInTree(Node* root) {
+    Node* max = root;
+    while (max->right != nullptr) {
+        max = max->right;
+    }
+    return max;
+}
+
+Node* findNode(Node* root, int key) {
+    while (root != nullptr && root->info != key) {
+        if (root->info > key) {
+            root = root->left;
+        }
+        else {
+            root = root->right;
+        }
+    }
+    return root;
+}
+Node* findParent(Node* root, Node* node) {
+    Node* prev = nullptr;
+    while (root != nullptr && (root->left != node && root->right != node)) {
+        prev = root;
+        if (root->info < node->info) {
+            root = root->right;
+        }
+        else if (root->info > node->info) {
+            root = root->left;
+        }
+        else {
+            break;
+        }
+    }
+    return prev;
+}
+void deleteNode(Node* root, Node* toDel) {
+    Node* prevDel = findParent(root, toDel);
+    if (toDel->left && toDel->right) {
+        Node* maxInTree = searchMaxInTree(toDel->left);
+        toDel->info = maxInTree->info;
+        deleteNode(toDel->left, maxInTree);
+        return;
+    }
+    else if (toDel->left) {
+        if (toDel == prevDel->left) {
+            prevDel->left = toDel->left;
+            
+        }
+        else {
+            prevDel->right = toDel->left;
+            
+        }
+    }
+    else if (toDel->right) {
+        if (toDel == prevDel->right) {
+            prevDel->right = toDel->right;
+            
+        }
+        else {
+            prevDel->left = toDel->right;
+            
+        }
+    }
+    else {
+        if (toDel == prevDel->left) {
+            prevDel->left = nullptr;
+        }
+        else {
+            prevDel->right = nullptr;
+        }
+    }
+    delete toDel;
+}
+
+int main() {
+    root = nullptr;
+    root = pushInTree(root, 5);
+    pushInTree(root, 3);
+    pushInTree(root, 4);
+    pushInTree(root, 6);
+    pushInTree(root, 1);
+    printTree(root);
+    cout << "\n";
+    Node* nodeToDel = findNode(root, 3);
+    deleteNode(root, nodeToDel);
+    printTree(root);
+    return 0;
+}

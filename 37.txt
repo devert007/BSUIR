@@ -1,0 +1,8 @@
+int recursive(int number,int &sum) {
+    if (!number) 
+        return sum;
+    if ((number%10)%2==0){
+        sum += number % 10;
+    }
+    recursive(number / 10,sum);
+}

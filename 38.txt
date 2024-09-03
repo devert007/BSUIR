@@ -1,0 +1,11 @@
+int recursive(int number,int count) {
+   
+  
+    if (!number) return count;
+    if ((number%10) % 2 == 0) {
+        count++;
+    }
+    recursive(number / 10,count);
+   
+    
+}
