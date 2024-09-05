@@ -1,14 +1,34 @@
+#!/bin/bash
+directory_name="$1"
+search_string="$2"
+echo "$directory"
 
-read -p "Введите строку: " user_input_string
-echo "Вы ввели: $user_input_string"
-read -p "Введите имя каталога: " dir_name
-echo "Вы ввели: $dir_name"
-let way_to_directory =$(find / -type d  -name "$dir_name")
-echo "$way_to_directory"
+directory=$(find / -type d -name "$directory_name")
 
-# for sub_dir in */; do
-#   if [ -d "$sub_dir" ] && [ -r "$sub_dir" ]
-#    then
-#     echo "Привет, $sub_dir"
-#   fi
-# done
+findFiles() {
+  local directory="$1"
+  grep -r "$search_string" "$directory" | while read -r file; do
+    file_size=$(stat -c "%s" "$file")  # Use the stat command to get the size of each matching file
+    echo "$file: $file_size"  # Output the path, filename, and size of each matching file
+  done
+for subdir in "$directory"/*; do
+  if [ -d "$directory" ]; then
+    if [ -r "$directory" ]; then
+      findFiles "$subdir"
+      else
+      echo "Нет доступа к каталогу $subdir";
+    fi
+done
+}
+#check directory existence
+if [ -d "$directory" ]; then
+  if [ -r "$directory" ]; then
+    cd "$directory"
+    echo "Your files with $search_string\ " | findFiles "$directory";
+    else
+    echo "Нет доступа к каталогу";
+  fi
+else 
+  echo "Каталог не существует"
+fi
+
