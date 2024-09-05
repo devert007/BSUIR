@@ -6,20 +6,10 @@ echo "$directory"
 directory=$(find / -type d -name "$directory_name")
 
 findFiles() {
-  local directory="$1"
-  grep -r "$search_string" "$directory" | while read -r file; do
-    file_size=$(stat -c "%s" "$file")  # Use the stat command to get the size of each matching file
-    echo "$file: $file_size"  # Output the path, filename, and size of each matching file
-  done
-for subdir in "$directory"/*; do
-  if [ -d "$directory" ]; then
-    if [ -r "$directory" ]; then
-      findFiles "$subdir"
-      else
-      echo "Нет доступа к каталогу $subdir";
-    fi
-done
+ grep -r -l "$search_string" | xargs stat --format="Name: %n Size: %B" | less
 }
+
+
 #check directory existence
 if [ -d "$directory" ]; then
   if [ -r "$directory" ]; then
