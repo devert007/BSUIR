@@ -2,13 +2,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
+#include <sstream>
 class LongInt {
 private:
     std::string longNumber;
 public:
-    LongInt(std::string) {
+    LongInt(const std::string& str) {
+
     }
+
 };
 
 
@@ -16,6 +18,10 @@ public:
 
 int main()
 {
-    LongInt a("100000000");
-    std::cout << "Hello World!\n";
+    setlocale(LC_ALL, "russian");
+    std::cout << "Введите число: ";
+    std::string input_string_num;
+ 
+    LongInt a(input_string_num);
+
 }
