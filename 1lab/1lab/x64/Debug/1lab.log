@@ -1,2 +1,6 @@
 ﻿  1lab.cpp
+D:\LABY\BSUIR\1lab\1lab\1lab.cpp(5,21): warning C4309: инициализация: усечение константного значения
+D:\LABY\BSUIR\1lab\1lab\1lab.cpp(14,47): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+D:\LABY\BSUIR\1lab\1lab\1lab.cpp(14,35): warning C4244: инициализация: преобразование "__int64" в "const int", возможна потеря данных
+D:\LABY\BSUIR\1lab\1lab\1lab.cpp(21): warning C4715: LongInt::operator int: значение возвращается не при всех путях выполнения
   1lab.vcxproj -> D:\LABY\BSUIR\1lab\x64\Debug\1lab.exe
