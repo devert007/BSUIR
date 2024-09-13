@@ -1,65 +1,65 @@
-онигири
-	<- блюдо;
-	<= идентификация*: ...
+onigiri
+	<- dish;
+	<= identification*: ...
 		(* 
 			<- sc_node_tuple;;
-			-> [онигири] <- русский язык;;
-			-> [onigiri] <- английский язык;;
-			-> [御握り] <-японский язык;;
+			-> [онигири] <- russian_language;;
+			-> [onigiri] <- english_language;;
+			-> [御握り] <-japanese_language;;
 		*);;
-	<= способ приготовления*: ...
+	<= cooking_method*: ...
 		(* 
 			<- sc_node_tuple;;
-			-> варка ;;
-			-> жарка ;;
-			-> тушение;;
+			-> boiling ;;
+			-> frying ;;
+			-> extinguishing;;
 		*);;
-	<= компоновка*: ...
+	<= composition*: ...
 		(* 
 			<- sc_node_tuple;;
-			-> нори;;
-			-> листья салата;;
-			-> рис;;
-			-> рыба;;
+			-> nori;;
+			-> leaves_of_salad;;
+			-> rice;;
+			-> fish;;
 		*);;
-	<= иметь пищевую ценность*: ...
+	<= have_average_nutrition_value**: ...
 		(* 
 			<- sc_node_tuple;;
-			-> белки -> г_: "..." <= идентификация*: ...
+			-> proteins -> г_: "..." <= identification*: ...
 					(*	<- sc_node_tuple;;
-						-> представление в десятичной системе счисления: [5,6]
+						-> decimal_representation: [5,6]
 					*);;
-			-> жиры -> г_: "..." <= идентификация*: ...
+			-> fats -> г_: "..." <= identification*: ...
 					(*	<- sc_node_tuple;;
-						-> представление в десятичной системе счисления: [8,5]
+						-> decimal_representation: [8,5]
 					*);;
-			-> углеводы -> г_: "..." <= идентификация*: ...
+			-> carbohydrates -> г_: "..." <= identification*: ...
 					(*	<- sc_node_tuple;;
-						-> представление в десятичной системе счисления: [60]
+						-> decimal_representation: [60]
 					*);;
-			-> кКал -> кДж_: "..." <= идентификация*: ...
+			-> kCal -> кДж_: "..." <= identification*: ...
 					(*	<- sc_node_tuple;;
-						->представление в десятичной системе счисления: [335,8]
+						-> decimal_representation: [335,8]
 					*);;
 		*);;
 
-япония 	
-	<- страна 
-	=> национальное блюдо*:онигири 
-процесс -> варка
-процесс -> жарка
-процесс -> тушение
+Japan 	
+	<- country 
+	=> national_dish*:onigiri 
+process -> boiling
+процесс -> frying
+процесс -> extinguishing
 
-национальное блюдо
-	=>основной идентификатор*: [национальное блюдо] <- русский язык;
-	=>основной идентификатор*: [national dishes] <- английский язык;
-	<- исследуемое отношение': предметная область кулинария;
-	=> первый домен*:национальность;
-	=> второй домен*:блюдо;
-	=> область определения*: "..."
-		<=объединение*
+national_dish
+	=> primary_identifier*: [национальное блюдо] <- russian_language;
+	=> primary_identifier*: [national dishes] <- english_language;
+	<- researched_attitude': Subjest_area_ oriental_cuisine;
+	=> first_domain*:nationality;
+	=> second_domain*:dish;
+	=> area_of_definition*: "..."
+		<=merge*
 			(*
 				<- sc_node_tuple;;
-				-> блюдо;;
-				-> национальность;;
+				-> dish;;
+				-> nationality;;
 			*)
