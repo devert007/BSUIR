@@ -80,6 +80,28 @@ public:
         result -= other;
         return result;
     }
+    LongInt& operator*=(LongInt& other) {
+        LongInt result("0");
+        for (int i = 0; i < other.size(); ++i) {
+            LongInt temp(longNumber);
+            int digit = other.getLong()[other.size() - 1 - i] - '0';
+            for (int j = 0; j < digit; ++j) {
+                result += temp;
+            }
+            for (int j = 0; j < i; ++j) {
+                result.getLong() += "0";
+            }
+        }
+        longNumber = result.getLong();
+        return *this;
+    }
+
+    LongInt operator*(LongInt& other) {
+        LongInt result = *this;
+        result *= other;
+        return result;
+    }
+
 };
 
 
@@ -97,14 +119,15 @@ int main() {
     std::string input_string_num = "";
     std::getline(std::cin, input_string_num);
     LongInt a(input_string_num);
-    LongInt b("123456789");
+    LongInt b("123");
     LongInt c = a + b;
     LongInt d = b - a;
     //a += b;
-    std::cout << "a += b <=> " << a.getLong() << '\n';
+  /*  std::cout << "a += b <=> " << a.getLong() << '\n';
     std::cout << "a + b <=> " << c.getLong() << '\n';
     std::cout << "a -= b <=> " << (b-=a).getLong() << '\n';
-    std::cout << "a - b <=> " << (d).getLong() << '\n';
+    std::cout << "a - b <=> " << (d).getLong() << '\n';*/
+    std::cout << (a*= b).getLong() << '\n';
     int integerNumFromLong = a;
     std::cout << "Integer value of a: " << integerNumFromLong << '\n';
 
