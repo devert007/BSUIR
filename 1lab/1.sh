@@ -5,8 +5,8 @@ search_string="$2"
 
 
 findFiles() {
-grep -r -l "$search_string" 2>/dev/null | xargs -I{} sh -c 'stat --format="Name: %n  Size: %B" "{}" || echo "No access to: {}"' sh}
-
+grep -r -l "$search_string" | xargs stat --format="Name: %n  Size: %B"
+}
 directory=$(find / -type d -name $directory_name 2>/dev/null)
 
 #check directory existence
