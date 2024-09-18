@@ -80,19 +80,29 @@ public:
         result -= other;
         return result;
     }
+
     LongInt& operator*=(LongInt& other) {
-        LongInt result("0");
+        std::string productResult;
         for (int i = 0; i < other.size(); ++i) {
-            LongInt temp(longNumber);
-            int digit = other.getLong()[other.size() - 1 - i] - '0';
-            for (int j = 0; j < digit; ++j) {
-                result += temp;
+            int digitRight = other.getLong()[other.size() - 1 - i] - '0';
+            std::string tempResult;
+            int v_ume = 0;
+            for (int j = 0; j < longNumber.size(); ++j) {
+                int digitLeft = longNumber[longNumber.size() - 1 - j] - '0';
+                int product = digitLeft * digitRight + v_ume;
+                v_ume = product / 10;
+                tempResult += std::to_string(product % 10);
             }
-            for (int j = 0; j < i; ++j) {
-                result.getLong() += "0";
+            if (v_ume > 0) {
+                tempResult += std::to_string(v_ume);
             }
+            std::reverse(tempResult.begin(), tempResult.end());
+            for (int k = 0; k < i; ++k) {
+                tempResult += '0';
+            }
+            productResult=addStrings(productResult, tempResult);
         }
-        longNumber = result.getLong();
+        longNumber = productResult;
         return *this;
     }
 
@@ -101,7 +111,24 @@ public:
         result *= other;
         return result;
     }
-
+private:
+    std::string addStrings(std::string& str1,std::string& str2) {
+        std::string sumResult;
+        int v_ume = 0;
+        int maxLength = std::max(int(str1.size()), int(str2.size()));
+        for (int i = 0; i < maxLength; ++i) {
+            int digitLeft = (i < str1.size()) ? (str1[str1.size() - 1 - i] - '0') : 0;
+            int digitRight = (i < str2.size()) ? (str2[str2.size() - 1 - i] - '0') : 0;
+            int sum = digitLeft + digitRight + v_ume;
+            v_ume = sum / 10; // save 10 in mind to sum this in another step in cycle
+            sumResult += std::to_string(sum % 10);
+        }
+        if (v_ume > 0) {
+            sumResult += std::to_string(v_ume);
+        }
+        std::reverse(sumResult.begin(), sumResult.end());
+        return sumResult;
+    }
 };
 
 
@@ -130,6 +157,5 @@ int main() {
     std::cout << (a*= b).getLong() << '\n';
     int integerNumFromLong = a;
     std::cout << "Integer value of a: " << integerNumFromLong << '\n';
-
     return 0;
 }

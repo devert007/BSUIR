@@ -1,0 +1,8 @@
+﻿  someTry.cpp
+D:\LABY\BSUIR\someTry\someTry\someTry.cpp(82,63): warning C4244: аргумент: преобразование "__int64" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+D:\LABY\BSUIR\someTry\someTry\someTry.cpp(106,37): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  someTry.vcxproj -> D:\LABY\BSUIR\someTry\x64\Debug\someTry.exe
