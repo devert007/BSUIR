@@ -108,7 +108,6 @@ public:
     int size() { return longNum.size(); }
 
     std::string getLong() { return (isPos ? "" : "-") + longNum; }
-
     Longint addLong(const Longint& other) {
         if (isPos && other.isPos) {         //оба положительны
             longNum = add_num_to_string(other);
