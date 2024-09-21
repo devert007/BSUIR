@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>D:\LABY\BSUIR\1labaPPOIS\x64\Debug\tests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseConstructor1.TestConstructor" Duration="1" />
+    <TestDuration Test="TestCaseConstructor2.TestConstructor2" Duration="1" />
+    <TestDuration Test="TestCaseConstructor3.TestConstructor3" Duration="1" />
+    <TestDuration Test="TestCaseConstructor1.defaultConstructor" Duration="1" />
+    <TestDuration Test="TestCaseConstructor2.InitConstructor" Duration="1" />
+    <TestDuration Test="TestCaseConstructor3.LongNumberConstructor" Duration="1" />
+    <TestDuration Test="TestCaseSum.TestA_plus_B_Sum" Duration="0" />
+  </TestDurations>
+</GtaTestDurations>

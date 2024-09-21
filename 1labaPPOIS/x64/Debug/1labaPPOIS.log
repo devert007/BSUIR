@@ -1,0 +1,4 @@
+﻿  1labaPPOIS.cpp
+D:\LABY\BSUIR\1labaPPOIS\1labaPPOIS.cpp(7,22): warning C4305: аргумент: усечение из "__int64" в "const int"
+D:\LABY\BSUIR\1labaPPOIS\1labaPPOIS.cpp(7,22): warning C4309: аргумент: усечение константного значения
+  1labaPPOIS.vcxproj -> D:\LABY\BSUIR\1labaPPOIS\x64\Debug\1labaPPOIS.exe

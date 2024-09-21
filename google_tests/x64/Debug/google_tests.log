@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  test.cpp
+D:\LABY\BSUIR\1laba\Longint.cpp(79,58): warning C4244: аргумент: преобразование "__int64" в "_Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+D:\LABY\BSUIR\1laba\Longint.cpp(106,42): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  google_tests.vcxproj -> D:\LABY\BSUIR\1laba\x64\Debug\google_tests.exe
