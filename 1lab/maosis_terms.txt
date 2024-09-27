@@ -1,20 +1,20 @@
 onigiri
 	<- dish;
-	<= identification*: ...
+	<= primary_identifier: ...
 		(* 
 			<- sc_node_tuple;;
-			-> [онигири] <- russian_language;;
-			-> [onigiri] <- english_language;;
-			-> [御握り] <-japanese_language;;
-		*);;
-	<= cooking_method*: ...
+			-> [онигири] (* <- russian_language*;;);;
+			-> [onigiri] (* <- english_language*;;);;
+			-> [御握り](* <- japanese_language*;;);;
+		*);
+	<= cooking_method: ...
 		(* 
 			<- sc_node_tuple;;
 			-> boiling ;;
 			-> frying ;;
 			-> extinguishing;;
-		*);;
-	<= composition*: ...
+		*);
+	<= composition: ...
 		(* 
 			<- sc_node_tuple;;
 			-> nori;;
@@ -22,44 +22,56 @@ onigiri
 			-> rice;;
 			-> fish;;
 		*);;
-	<= have_average_nutrition_value**: ...
+	<= have_average_nutrition_value: ...
 		(* 
 			<- sc_node_tuple;;
-			-> proteins -> г_: "..." <= identification*: ...
-					(*	<- sc_node_tuple;;
+			-> proteins (*-> g_: ...(* <= identification: ...
+					(*	
+						<- sc_node_tuple;;
 						-> decimal_representation: [5,6]
-					*);;
-			-> fats -> г_: "..." <= identification*: ...
-					(*	<- sc_node_tuple;;
+					*);; 
+					     *)
+				     *);;
+			-> fats (*-> g_: ...(* <= identification: ...
+					(*	
+						<- sc_node_tuple;;
 						-> decimal_representation: [8,5]
-					*);;
-			-> carbohydrates -> г_: "..." <= identification*: ...
-					(*	<- sc_node_tuple;;
+					*);; 
+					     *)
+				     *);;
+			-> carbohydrates (*-> g_: ...(* <= identification: ...
+					(*	
+						<- sc_node_tuple;;
 						-> decimal_representation: [60]
-					*);;
-			-> kCal -> кДж_: "..." <= identification*: ...
-					(*	<- sc_node_tuple;;
+					*);; 
+					     *)
+				     *);;
+			-> kCal (*-> kJoules_: ...(* <= identification: ...
+					(*	
+						<- sc_node_tuple;;
 						-> decimal_representation: [335,8]
-					*);;
+					*);; 
+					     *)
+				     *);;
 		*);;
 
 Japan 	
-	<- country 
-	=> national_dish*:onigiri 
-process -> boiling
-процесс -> frying
-процесс -> extinguishing
+	<- country;
+	=> national_dish:onigiri;;
+process -> boiling;;
+процесс -> frying;;
+процесс -> extinguishing;;
 
 national_dish
-	=> primary_identifier*: [национальное блюдо] <- russian_language;
-	=> primary_identifier*: [national dishes] <- english_language;
-	<- researched_attitude': Subjest_area_ oriental_cuisine;
-	=> first_domain*:nationality;
-	=> second_domain*:dish;
-	=> area_of_definition*: "..."
-		<=merge*
+	=> primary_identifier: [национальное блюдо] (*<- russian_language*;;);
+	=> primary_identifier: [national dishes] (*<- english_language*;;);
+	<- researched_attitude: Subjest_area_ oriental_cuisine;
+	=> first_domain:nationality;
+	=> second_domain:dish;
+	=> area_of_definition: ...
+		(*<=merge: ...
 			(*
 				<- sc_node_tuple;;
 				-> dish;;
 				-> nationality;;
-			*)
+			*);;*);;
