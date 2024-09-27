@@ -20,7 +20,7 @@ TEST(TestCaseConstructor3, LongNumberConstructor) {
 
 
 TEST(TestCaseSum, TestA_plus_B_Sum) {
-	Longint a("-22435670");
+	Longint a("22435670");
 	Longint b("22435670");
 	EXPECT_EQ("0", (a+b).getLong());
 	EXPECT_TRUE(true);
