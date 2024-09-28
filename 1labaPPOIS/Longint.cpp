@@ -226,6 +226,10 @@ Longint Longint::multlong(const Longint& other)
     if (((isPos && other.isPos) || (!isPos && !other.isPos))) {
         isPos = true;
     }
+    else {
+        isPos=false;
+    }
+    
     longNum = multiply_strings(other);
     return *this;
 }
@@ -277,16 +281,15 @@ Longint Longint::operator+=(const Longint& other) {
     return addLong(other);
 }
 Longint Longint::operator-=(const Longint& other) {
-    Longint temp = (isPos) ? longNum : "-" + longNum;
-    return temp.subLong(other);
+   
+    return subLong(other);
 }
 Longint Longint::operator*=(const Longint& other) {
-    Longint temp = (isPos) ? longNum : "-" + longNum;
-    return temp.multlong(other);
+   
+    return multlong(other);
 }
 Longint Longint::operator/=(const Longint& other) {
-    Longint temp = (isPos) ? longNum : "-" + longNum;
-    return temp.divLong(other);
+    return divLong(other);
 }
 
 
@@ -312,16 +315,13 @@ Longint Longint::operator+=(const int& other) {
     return addInt(other);
 }
 Longint Longint::operator-=(const int& other) {
-    Longint temp = (isPos) ? longNum : "-" + longNum;
     return subInt(other);
 }
 Longint Longint::operator*=(const int& other) {
-    Longint temp = (isPos) ? longNum : "-" + longNum;
-    return temp.multInt(other);
+    return multInt(other);
 }
 Longint Longint::operator/=(const int& other) {
-    Longint temp = (isPos) ? longNum : "-" + longNum;
-    return temp.divInt(other);
+    return divInt(other);
 }
 
 

@@ -5,6 +5,5 @@ D:\LABY\BSUIR\1labaPPOIS\Longint.cpp(99,58): warning C4244: аргумент: п
               _Elem=char
           ]
 D:\LABY\BSUIR\1labaPPOIS\Longint.cpp(133,42): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
-D:\LABY\BSUIR\1labaPPOIS\Longint.cpp(242): warning C4715: Longint::addInt: значение возвращается не при всех путях выполнения
-  LINK : не найден или не выполнена сборка D:\LABY\BSUIR\1labaPPOIS\x64\Debug\tests.exe при последней инкрементной компоновке; выполняется полная компоновка
+D:\LABY\BSUIR\1labaPPOIS\Longint.cpp(246): warning C4715: Longint::addInt: значение возвращается не при всех путях выполнения
   tests.vcxproj -> D:\LABY\BSUIR\1labaPPOIS\x64\Debug\tests.exe

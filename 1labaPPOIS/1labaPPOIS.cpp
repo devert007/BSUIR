@@ -3,8 +3,9 @@
 int main() {
 
     Longint a("22435670");
-    Longint b("-22435670");
-    std::cout << (a+=123420342034).getLong() << '\n';
+    Longint b("-2243");
+    std::cout << (a).getLong() << '\n';
+    std::cout << (a+=b).getLong() << '\n';
 
     std::cout <<(a).getLong()<< '\n';
     std::cout << "Hello";
