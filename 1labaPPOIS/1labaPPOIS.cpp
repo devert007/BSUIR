@@ -2,12 +2,11 @@
 #include <iostream>
 int main() {
 
-    Longint a("22435670");
-    Longint b("-2243");
-    std::cout << (a).getLong() << '\n';
-    std::cout << (a+=b).getLong() << '\n';
+    Longint a("12345");
+    std::cout << (a+1).getLong() << '\n';
+  //  std::cout << (a+=b).getLong() << '\n';
 
-    std::cout <<(a).getLong()<< '\n';
+   // std::cout <<(a).getLong()<< '\n';
     std::cout << "Hello";
     return 0;
 }

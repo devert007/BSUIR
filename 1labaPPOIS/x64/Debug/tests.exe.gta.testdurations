@@ -30,5 +30,11 @@
     <TestDuration Test="TestCaseSub5.TestA_plus_B_Sub" Duration="1" />
     <TestDuration Test="TestCaseSub6.TestA_plus_B_Sub" Duration="1" />
     <TestDuration Test="TestCaseMult6.TestA_mult_B_is" Duration="1" />
+    <TestDuration Test="TestCaseDiv1.TestA_div_B_is" Duration="1" />
+    <TestDuration Test="TestCaseDiv2.TestA_div_B_is" Duration="1" />
+    <TestDuration Test="TestCaseDiv3.TestA_div_B_is" Duration="1" />
+    <TestDuration Test="TestCaseCompare." Duration="1" />
+    <TestDuration Test="TestCaseSize3.LongNumberSize" Duration="1" />
+    <TestDuration Test="TestCaseSize.LongNumberSize" Duration="1" />
   </TestDurations>
 </GtaTestDurations>

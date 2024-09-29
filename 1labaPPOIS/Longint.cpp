@@ -223,7 +223,7 @@ Longint Longint::subLong(const Longint& other)
 }
 Longint Longint::multlong(const Longint& other)
 {
-    if (((isPos && other.isPos) || (!isPos && !other.isPos))) {
+    if ((isPos && other.isPos) || (!isPos && !other.isPos)) {
         isPos = true;
     }
     else {
@@ -235,6 +235,10 @@ Longint Longint::multlong(const Longint& other)
 }
 Longint Longint::divLong(const Longint& other)
 {
+    if ((isPos && other.isPos) || (!isPos && !other.isPos)) {
+        isPos = true;
+    }
+    else isPos = false;
     longNum = longDivision(other);
     return *this;
 }
@@ -335,23 +339,11 @@ Longint Longint::operator++(int)
     addLong(one);
     return *this;
 }
-Longint Longint::operator++()
-{
-    Longint one("1");
-    longNum = addLong(one).getLong();
-    return *this;
-}
 Longint Longint::operator--(int)
 {
     Longint temp(*this);
     Longint one("1");
     subLong(one);
-    return *this;
-}
-Longint Longint::operator--()
-{
-    Longint one("1");
-    longNum = subLong(one).getLong();
     return *this;
 }
 
