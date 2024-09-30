@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <sys/types.h>
 
 void print_process_info(__pid_t pid, __pid_t ppid) {
     printf("Process ID: %d, Parent Process ID: %d\n", pid, ppid);
@@ -10,41 +11,32 @@ void print_process_info(__pid_t pid, __pid_t ppid) {
 
 
 
+int main(){
+ __pid_t pid;
+  pid=fork();
+  int fork_tree[] = {0, 1, 1, 2, 2, 5, 6};
+    int exec_process = 3;
+for (int i = 0; i < sizeof(fork_tree) / sizeof(fork_tree[0]); i++) {
+        __pid_t pid = fork();
 
-int main() {
-    // 1st
-    printf("STR (%d -> %d)\n", getppid(), getpid());
-
-    if (fork() == 0) {
-        // 2nd
-        printf("2. (%d -> %d)\n", getppid(), getpid());
-        if (fork() == 0) {
-            // 5th
-            printf("5. (%d -> %d)\n", getppid(), getpid());
-            if (fork() == 0) {
-                // 6th
-                printf("6. (%d -> %d)\n", getppid(), getpid());
-            } else {
-                if (fork() == 0) {
-                    // 7th
-                    printf("7. (%d -> %d)\n", getppid(), getpid());
-                }
-            }
-        }
-    } else {
-        if (fork() == 0) {
-            // 3rd
-            printf("3. (%d -> %d)\n", getppid(), getpid());
-            execl("/bin/time", "/bin/time", "-p", "/bin/ls");
+     if (pid > 0) {
+            // Parent process
+            print_process_info(getpid(), getppid());
+            printf("Process %d spawned process %d\n", getpid(), pid);
         } else {
-            if (fork() == 0) {
-                // 4th
-                printf("4. (%d -> %d)\n", getppid(), getpid());
-            }
-        }
-    }
+           print_process_info(getpid(), getppid());
 
-    while(wait(NULL) > 0);
-    printf("STP (%d -> %d)\n", getppid(), getpid());
-    return 0;
+            if (i == exec_process) {
+             //   execlp("/file","pwd",NULL);
+            }
+
+            break;
+        }
+  }
+  // for (int i = 0; i < sizeof(fork_tree) / sizeof(fork_tree[0]) - 1; i++) {
+  //       wait(NULL);
+  //   }
+
+  //   printf("Process %d (Parent: %d) is terminating\n", getpid(), getppid());
+
 }
