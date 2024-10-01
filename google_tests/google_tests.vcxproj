@@ -111,8 +111,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\1laba\1laba.vcxproj">
-      <Project>{81bd59f0-4aba-4fc6-9003-1b7d55e01d3c}</Project>
+    <ProjectReference Include="..\1labaPPOIS\1labaPPOIS.vcxproj">
+      <Project>{1cdc5c00-f9dc-48c3-9497-6abc97dfb46b}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

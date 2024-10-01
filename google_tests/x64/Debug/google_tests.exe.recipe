@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\LABY\BSUIR\1laba\x64\Debug\1laba.exe</FullPath>
+      <FullPath>D:\LABY\BSUIR\1labaPPOIS\x64\Debug\1labaPPOIS.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\LABY\BSUIR\1laba\x64\Debug\google_tests.exe</FullPath>
+      <FullPath>D:\LABY\BSUIR\1labaPPOIS\x64\Debug\google_tests.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

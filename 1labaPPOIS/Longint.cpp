@@ -143,8 +143,9 @@ void Longint::removeOperationPlus_setMinus( Longint first, Longint other) {
     {
         std::string tempstring = longNum;
         first.longNum = other.longNum;
-        isPos = false;
+        isPos = true;
         longNum = sub_string_from_string(tempstring);
+        isPos = false;
     }
 }
 
@@ -159,16 +160,18 @@ void Longint::subTwoPositive(const Longint& other) {
     {
         std::string tempString = longNum;
         longNum = other.longNum;
-        isPos = false;
+        isPos = true;
         longNum = sub_string_from_string(tempString);
+        isPos = false;
     }
 }
 void Longint::subTwoNegative(const Longint& other) {
     if (longNum.size() > other.longNum.size() ||
         (longNum.size() == other.longNum.size() && longNum > other.longNum))
     {
-        isPos = false;
+        isPos = true;
         longNum = sub_string_from_string(other.longNum);
+        isPos = false;
     }
     else
     {
@@ -191,11 +194,15 @@ Longint Longint::addLong(const Longint& other)
     }
     else if (isPos && !other.isPos) // x + (-y) = x - y
     {
+       
         removeOperationPlus_setMinus(*this, other);
     }
     else // -x + y
     {
         removeOperationPlus_setMinus(other, *this);
+    }
+    if (longNum == "0") {
+        isPos = true;
     }
     return *this;
 }
@@ -219,6 +226,9 @@ Longint Longint::subLong(const Longint& other)
             isPos = false;
             longNum = add_string_to_string(other);
         }
+    if (longNum == "0") {
+        isPos = true;
+    }
     return *this;
 }
 Longint Longint::multlong(const Longint& other)
