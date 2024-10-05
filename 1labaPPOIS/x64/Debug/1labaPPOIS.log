@@ -1,9 +1,2 @@
-﻿  Longint.cpp
-D:\LABY\BSUIR\1labaPPOIS\Longint.cpp(99,58): warning C4244: аргумент: преобразование "__int64" в "_Elem", возможна потеря данных
-          with
-          [
-              _Elem=char
-          ]
-D:\LABY\BSUIR\1labaPPOIS\Longint.cpp(133,42): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
-D:\LABY\BSUIR\1labaPPOIS\Longint.cpp(260): warning C4715: Longint::addInt: значение возвращается не при всех путях выполнения
+﻿  LINK : не найден или не выполнена сборка D:\LABY\BSUIR\1labaPPOIS\x64\Debug\1labaPPOIS.exe при последней инкрементной компоновке; выполняется полная компоновка
   1labaPPOIS.vcxproj -> D:\LABY\BSUIR\1labaPPOIS\x64\Debug\1labaPPOIS.exe
