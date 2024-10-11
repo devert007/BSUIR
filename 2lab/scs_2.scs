@@ -1,11 +1,7 @@
-lang_ru<-sc_node_class;;
-lang_en<-sc_node_class;;
-
-
 section_subject_domain_of_oriental_cuisine 
   => nrel_main_idtf: 
-                        [Раздел.Предметная область восточной кухни(*<-lang_ru;;*)];
-                        [Section.Subject domain of oriental cuisine(*<-lang_en*)];
+                        [Раздел.Предметная область восточной кухни](*<-lang_ru;;*);
+                        [Section.Subject domain of oriental cuisine](*<-lang_en;;*);
   => nrel_system_idtf:
                         [subject_domain_of_oriental_cuisine];
   <= nrel_section_decomposition: ...
@@ -42,6 +38,117 @@ section_subject_domain__of_oriental_cuisine = [*
                                                                             subject_domain_indian_eating_rules;
                                             <- subject_domain;
                                             -> rrel_maximum_studied_object_class: concept_dish; 
-                                            -> rrel_not_maximum_studied_object_class: concept_vegetables;concept_fructs;;
+                                            -> rrel_not_maximum_studied_object_class: concept_vegetables;concept_fruits;;
                                               *];;
-                      
+                               
+
+
+
+
+
+
+
+nrel_choose_dish<- sc_node_norole_relation; 
+                               => nrel_main_idtf:[выбрать блюдо*] (*<- lang_ru;;*);
+                                                  [concept_dish](*<- lang_en;;*);;
+nrel_read_the_recipe<- sc_node_norole_relation; 
+                               => nrel_main_idtf:[прочитать инструкцию*] (*<- lang_ru;;*);
+                                                  [read the recipe](*<- lang_en;;*);;
+nrel_prepare_dish<- sc_node_norole_relation; 
+                               => nrel_main_idtf:[приготовить блюдо*] (*<- lang_ru;;*);
+                                                  [prepare dish](*<- lang_en;;*);;
+nrel_learn_the_history_of_the_dish<- sc_node_norole_relation; 
+                               => nrel_main_idtf:[узнать историю блюда*] (*<- lang_ru;;*);
+                                                  [learn the history of the dish](*<- lang_en;;*);;
+nrel_rules_of_eating<- sc_node_norole_relation; 
+                               => nrel_main_idtf:[правила приема пищи*] (*<- lang_ru;;*);
+                                                  [rules of eating ](*<- lang_en;;*);;
+
+
+
+section_subject_domain_of_chinese_cuisine
+                                   => nrel_main_idtf:
+                                      [Раздел. Предметная область китайской кухни] (*<- lang_ru;;*);
+                                      [Section. Subject domain of chinese cuisine](*<- lang_en;;*);
+                                   <- sc_node_struct;;
+ 
+section_subject_domain_of_japanese_cuisine
+                                   => nrel_main_idtf:
+                                      [Раздел. Предметная область японской кухни] (*<- lang_ru;;*);
+                                      [Section. Subject domain of japanese cuisine](*<- lang_en;;*);
+                                   <- sc_node_struct;;
+
+section_subject_domain_of_korean_cuisine
+                                   => nrel_main_idtf:
+                                      [Раздел. Предметная область корейской кухни] (*<- lang_ru;;*);
+                                      [Section. Subject domain of korean cuisine](*<- lang_en;;*);
+                                   <- sc_node_struct;;
+
+section_subject_domain_of_indian_cuisine
+                                   => nrel_main_idtf:
+                                      [Раздел. Предметная область индийской кухни] (*<- lang_ru;;*);
+                                      [Section. Subject domain of indian cuisine](*<- lang_en;;*);
+                                   <- sc_node_struct;;
+
+
+
+
+
+
+
+subject_domain_chinese_eating_rules 
+                        => nrel_main_idtf:
+                                      [Предметная область китайских правил приема пищи] (*<- lang_ru;;*);
+                                      [Subject domain of chinese eating rules](*<- lang_en;;*);
+                        <- sc_node_struct;;
+subject_domain_japanese_eating_rules 
+                        => nrel_main_idtf:
+                                      [Предметная область японских правил приема пищи] (*<- lang_ru;;*);
+                                      [Subject domain of japanese eating rules](*<- lang_en;;*);
+                        <- sc_node_struct;;
+subject_domain_korean_eating_rules 
+                        => nrel_main_idtf:
+                                      [Предметная область корейских правил приема пищи] (*<- lang_ru;;*);
+                                      [Subject domain of korean eating rules](*<- lang_en;;*);
+                        <- sc_node_struct;;
+subject_domain_indian_eating_rules 
+                        => nrel_main_idtf:
+                                      [Предметная область индийских правил приема пищи] (*<- lang_ru;;*);
+                                      [Subject domain of indian eating rules](*<- lang_en;;*);
+                        <- sc_node_struct;;
+
+
+
+
+concept_dish <- sc_node_class;
+              => nrel_main_idtf:
+                        [блюдо](*<-lang_ru;;*);
+                        [dish](*<-lang_en;;*);;
+concept_vegetables <- sc_node_class;
+              => nrel_main_idtf:
+                        [овощи](*<-lang_ru;;*);
+                        [vegetables](*<-lang_en;;*);;
+concept_fruits <- sc_node_class;
+              => nrel_main_idtf:
+                        [фрукты](*<-lang_ru;;*);
+                        [fruits](*<-lang_en;;*);;
+
+lang_ru<-sc_node_class;;
+lang_en<-sc_node_class;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   
+                 
+                 
