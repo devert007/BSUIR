@@ -4,18 +4,44 @@ lang_en<-sc_node_class;;
 
 section_subject_domain_of_oriental_cuisine 
   => nrel_main_idtf: 
-                    [Раздел.Предметная область восточной кухни(*<-lang_ru;;*)];
-                    [Section.Subject domain of oriental cuisine(*<-lang_en*)];;
-
-section_subject_domain__of_oriental_cuisine
+                        [Раздел.Предметная область восточной кухни(*<-lang_ru;;*)];
+                        [Section.Subject domain of oriental cuisine(*<-lang_en*)];
   => nrel_system_idtf:
-                     [subject_domain_of_oriental_cuisine];; 
+                        [subject_domain_of_oriental_cuisine];
+  <= nrel_section_decomposition: ...
+                      (*
+                        <- sc_node_tuple;;
+                        -> section_subject_domain_of_chinese_cuisine;;
+                        -> section_subject_domain_of_japanese_cuisine;;
+                        -> section_subject_domain_of_korean_cuisine;;
+                        -> section_subject_domain_of_indian_cuisine;;
+                      *);
+  -> rrel_key_sc_element:  
+                          nrel_choose_dish; 
+                          nrel_read_the_recipe;
+                          nrel_prepare_dish;
+                          nrel_learn_the_history_of_the_dish;
+                          nrel_rules_of_eating;
+  <- non_atomic_section;;
 
-section_subject_domain__of_oriental_cuisine
-  <= decomposition_of_section:
-                      [Section.Subject domain of Chinese cuisine];
-                      [Section.Subject domain of Japanewe cuisine];
-                      [Section.Subject domain of Korean cuisine];
-                      [Section.Subject domain of Indian cuisine];;
-                      
+
+section_subject_domain__of_oriental_cuisine = [*
+        subject_domain_of_oriental_cuisine => nrel_main_idtf: 
+                            [Раздел.Предметная область восточной кухни] (*<- lang_ru;;*);[Section.Subject domain of oriental cuisine] (*<- lang_en;;*);
+                                            <- sc_node_struct;
+                                            -> rrel_explored_relation:  
+                                                                        nrel_choose_dish; 
+                                                                        nrel_read_the_recipe;
+                                                                        nrel_prepare_dish;
+                                                                        nrel_learn_the_history_of_the_dish;
+                                                                        nrel_rules_of_eating;                                                                        nrel_eat;
+                                            => nrel_private_subject_domain: 
+                                                                            subject_domain_chinese_eating_rules;
+                                                                            subject_domain_japanese_eating_rules;
+                                                                            subject_domain_korean_eating_rules;
+                                                                            subject_domain_indian_eating_rules;
+                                            <- subject_domain;
+                                            -> rrel_maximum_studied_object_class: concept_dish; 
+                                            -> rrel_not_maximum_studied_object_class: concept_vegetables;concept_fructs;;
+                                              *];;
                       

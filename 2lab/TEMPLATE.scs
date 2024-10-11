@@ -23,7 +23,7 @@ section_subject_domain_of_pets = [*
 
 section_subject_domain_of_pets  => nrel_main_idtf:[Раздел. Предметная область домашних животных] (*<- lang_ru;;*);[Section. Subject domain of pets](*<- lang_en;;*);
                                 <= nrel_section_decomposition: ...
-                                                            (* <-sc_node_tuple;; 
+                                                            (* <- sc_node_tuple;; 
                                                                -> section_subject_domain_of_dogs;;
                                                                -> section_subject_domain_of_cats;;
                                                                -> section_subject_domain_of_birds;;
