@@ -1,0 +1,21 @@
+lang_ru<-sc_node_class;;
+lang_en<-sc_node_class;;
+
+
+section_subject_domain_of_oriental_cuisine 
+  => nrel_main_idtf: 
+                    [Раздел.Предметная область восточной кухни(*<-lang_ru;;*)];
+                    [Section.Subject domain of oriental cuisine(*<-lang_en*)];;
+
+section_subject_domain__of_oriental_cuisine
+  => nrel_system_idtf:
+                     [subject_domain_of_oriental_cuisine];; 
+
+section_subject_domain__of_oriental_cuisine
+  <= decomposition_of_section:
+                      [Section.Subject domain of Chinese cuisine];
+                      [Section.Subject domain of Japanewe cuisine];
+                      [Section.Subject domain of Korean cuisine];
+                      [Section.Subject domain of Indian cuisine];;
+                      
+                      
