@@ -1,5 +1,0 @@
-﻿  1lab.cpp
-D:\LABY\BSUIR\1lab\1lab\1lab.cpp(15,40): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
-D:\LABY\BSUIR\1lab\1lab\1lab.cpp(24,47): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
-D:\LABY\BSUIR\1lab\1lab\1lab.cpp(24,35): warning C4244: инициализация: преобразование "__int64" в "const int", возможна потеря данных
-  1lab.vcxproj -> D:\LABY\BSUIR\1lab\x64\Debug\1lab.exe
