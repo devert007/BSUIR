@@ -1,4 +1,0 @@
-﻿  testing.cpp
-D:\LABY\TMOIS\testing\testing\testing.cpp(7,6): warning C4101: res: неиспользованная локальная переменная
-D:\LABY\TMOIS\testing\testing\testing.cpp(20): warning C4715: proverka: значение возвращается не при всех путях выполнения
-  testing.vcxproj -> D:\LABY\TMOIS\testing\x64\Debug\testing.exe
