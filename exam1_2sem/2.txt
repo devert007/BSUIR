@@ -1,0 +1,75 @@
+#include <iostream>
+using namespace std;
+#include "windows.h"
+#include <string>
+struct Node {
+	int data;
+	Node* next;
+};
+Node* createNode(int data) {
+	Node* newNode = new Node();
+	newNode->next = nullptr;
+	newNode->data=data;
+	return newNode;
+}
+void push(Node*& top, int data) {
+	Node* new_n = createNode(data);
+	
+	new_n->next = top;
+	top = new_n;
+	
+}
+int pop(Node*& top) {
+	Node* temp = top;
+	top = (top)->next;
+	int data = temp->data;
+	delete temp;
+
+	return data;
+}
+void printStk(Node* top) {
+	Node* current = top;
+	while (current != nullptr) {
+		
+		cout << current->data;
+		current = current->next;
+	}
+	cout << '\n';
+}
+int sizeStk(Node* top) {
+	Node* current = top;
+	int size=0;
+	while (current != nullptr) {
+		size++;
+		
+		current = current->next;
+	}
+	return size;
+}
+
+
+int main() {
+	
+	Node* stack=nullptr;
+	push(stack, -5);
+	push(stack, -3);
+	push(stack, 2);
+	
+	printStk(stack);
+	
+	int size = sizeStk(stack);
+	Node* negativeStack = nullptr;
+	while (stack != nullptr) {
+		
+		if (stack->data < 0) {
+			push(negativeStack, stack->data);
+
+			pop(stack);
+
+		}
+		else stack = stack->next;
+	
+	}
+	printStk(negativeStack);
+	return 0;
+}
