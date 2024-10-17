@@ -134,10 +134,18 @@
     <ClCompile Include="RegistrationMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Acetaminophen.h" />
+    <ClInclude Include="Antigistat.h" />
+    <ClInclude Include="Aspirin.h" />
     <ClInclude Include="Company.h" />
+    <ClInclude Include="Diclofenac.h" />
     <ClInclude Include="Director.h" />
+    <ClInclude Include="Headflex.h" />
     <ClInclude Include="Human.h" />
+    <ClInclude Include="Ibyprofen.h" />
+    <ClInclude Include="Ketorelac.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="Mig.h" />
     <ClInclude Include="Order.h" />
     <ClInclude Include="RegistrationMenu.h" />
   </ItemGroup>

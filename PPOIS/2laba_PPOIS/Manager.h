@@ -3,6 +3,19 @@
 
 
 #include "Order.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Mig.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Acetaminophen.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Antigistat.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Aspirin.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Diclofenac.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Headflex.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Ibyprofen.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Ketorelac.h"
+
+
+
+
+
 
 class Manager :public Human {
 private:

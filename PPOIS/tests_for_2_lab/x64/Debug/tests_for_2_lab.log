@@ -1,3 +1,6 @@
-﻿  pch.cpp
-  test.cpp
-  tests_for_2_lab.vcxproj -> D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab.exe
+﻿  test.cpp
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.h(13,4): error C2065: MIG: необъявленный идентификатор
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.h(13,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mig"
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.h(13,8): error C2065: mig: необъявленный идентификатор
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.h(14,11): error C2065: mig: необъявленный идентификатор
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.cpp(39,39): warning C4244: +=: преобразование "double" в "int", возможна потеря данных

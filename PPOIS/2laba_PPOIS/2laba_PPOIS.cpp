@@ -2,16 +2,18 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Mig.h"
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.cpp"
 #include <D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.h>
+
 #include <vector>
 #include "Company.h"
 #include "Director.h"
 int main()
 {
     setlocale(LC_ALL, "russian");
-   
-    Client new_client;
+    RegMenu menu;
+    Client new_client(menu);
     Director director;
     Company lekar = director.showCompany();
     bool flagForMenuLoop = true;
@@ -47,12 +49,19 @@ int main()
             }
             break;
         case 2:
-            new_client.addBasket();
+        {Manager manager;
+        Order orderOfClient;
+        orderOfClient = manager.sendAconfirmationToClient();
+        new_client.addBasket(orderOfClient); }
             system("cls");
             break;
-        case 3:
-            new_client.getBasketList();
-
+        case 3: {
+            vector<Order>basket = new_client.getBasketList();
+            std::cout << "Ваша корзина:\n";
+            for (int i = 0; i < basket.size(); i++)
+            {
+                cout << i + 1 << ") " << basket[i].getName() << "\nPrice:" << basket[i].getPrice() << '\n';
+            }}
             break;
         case 4:
             cout << "1. MIG\n";

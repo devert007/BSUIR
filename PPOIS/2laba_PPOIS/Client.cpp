@@ -2,12 +2,14 @@
 #include <vector>
 #include <string>
 #include <iostream>
-Client :: Client() {
-	RegMenu menu;
+Client :: Client(RegMenu menu) {
+
 	menu.makeRegistration();
 	this->email = menu.getEmail();
 	setName(menu.getName());
 	this->cash = menu.getCash();
+}
+Client::Client() {
 }
 string Client::getEmail() {
 	return this->email;
@@ -15,18 +17,12 @@ string Client::getEmail() {
 int Client::getCash() {
 	return this->cash;
 }
-void Client::addBasket() {
-	Manager manager;
-	Order orderOfClient;
-	orderOfClient = manager.sendAconfirmationToClient();
+void Client::addBasket(Order orderOfClient) {
 	basket.push_back(orderOfClient);
 }
-void Client::getBasketList() {
-	std::cout << "Ваша корзина:\n";
-	for (int i = 0; i < this->basket.size(); i++)
-	{
-		cout << i + 1 << ") " << basket[i].getName() << "\nPrice:" << basket[i].getPrice() << '\n';
-	}
+vector<Order> Client::getBasketList() {
+	
+	return this->basket;
 }
 void Client::deleteFromBasket() {
 	cout << "Выберите номер препарата который вы хотите удалить из корзины:\n ";
@@ -52,4 +48,13 @@ void Client::doMainOrder() {
 	else {
 		cout << "Ваша корзина пуста\n";
 	}
+}
+void Client::setClientName(string new_name) {
+	setName(new_name);
+}
+void Client::setClientEmail(string new_email) {
+	this->email=(new_email);
+}
+void Client::setClientCash(int new_cash) {
+	this->cash = (new_cash);
 }
