@@ -6,25 +6,24 @@
 #include <vector>
 #include <string>
 #include "Order.h"
-
-#include "Basket.h"
+#include "Human.h"
+#include "RegistrationMenu.h"
+#include "Manager.h"
 using namespace std;
-class Client {
+class Client:public Human {
 private:
-	string name;
 	string email;
-	Basket basket;
+	vector<Order>basket;
+	int cash;
 public:
-	string getName() {
-		return this->name;
-	}
-	string getEmail() {
-		return this->email;
-	}
-	
-	void doOrder() {
+	Client();
+	string getEmail();
+	int getCash();
+	void addBasket();
+	void getBasketList();
+	void deleteFromBasket();
 
-	}
+	void doMainOrder();
 };
 
 
