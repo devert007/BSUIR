@@ -2,9 +2,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Mig.h"
 #include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.cpp"
-#include <D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.h>
+#include <D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.cpp>
 
 #include <vector>
 #include "Company.h"

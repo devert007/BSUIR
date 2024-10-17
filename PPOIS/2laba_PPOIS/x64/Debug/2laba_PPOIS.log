@@ -1,2 +1,6 @@
-﻿  Order.cpp
-  2laba_PPOIS.vcxproj -> D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\2laba_PPOIS.exe
+﻿  2laba_PPOIS.cpp
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.cpp(39,39): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.cpp(39): warning C4715: Manager::compare_an_order: значение возвращается не при всех путях выполнения
+x64\Debug\Client.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
+Manager.obj : error LNK2005: "private: class Order __cdecl Manager::compare_an_order(int)" (?compare_an_order@Manager@@AEAA?AVOrder@@H@Z) уже определен в 2laba_PPOIS.obj
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\2laba_PPOIS.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более

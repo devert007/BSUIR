@@ -130,6 +130,7 @@
     <ClCompile Include="2laba_PPOIS.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Client.h" />
+    <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Order.cpp" />
     <ClCompile Include="RegistrationMenu.cpp" />
   </ItemGroup>
