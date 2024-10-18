@@ -1,4 +1,4 @@
-[2024-10-18 01:12:40] [info] Start Program:
+[2024-10-18 09:20:21] [info] Start Program:
 Path:"D:\\LABY\\BSUIR\\PPOIS\\2laba_PPOIS\\x64\\Debug\\tests_for_2_lab"
 Arguments:
 Working directory: not set.
@@ -14,8 +14,8 @@ Input coverage:
 Unified diff: 
 Excluded line regular expressions: 
 Substitute pdb source paths: 
-[2024-10-18 01:12:40] [info] Module: D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab.exe is selected because it matches selected pattern: D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab
-[2024-10-18 01:12:40] [info] ----------------------------------------------------
-[2024-10-18 01:12:40] [info] Coverage generated in Folder D:\LABY\BSUIR\PPOIS\2laba_PPOIS\CoverageReport-2024-10-18-01h12m40s
-[2024-10-18 01:12:40] [info] ----------------------------------------------------
-[2024-10-18 01:12:40] [info] The code coverage report is not what you expect? See the FAQ https://github.com/OpenCppCoverage/OpenCppCoverage/wiki/FAQ.
+[2024-10-18 09:20:21] [info] Module: D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab.exe is selected because it matches selected pattern: D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab
+[2024-10-18 09:20:21] [info] ----------------------------------------------------
+[2024-10-18 09:20:21] [info] Coverage generated in Folder D:\LABY\BSUIR\PPOIS\2laba_PPOIS\CoverageReport-2024-10-18-09h20m21s
+[2024-10-18 09:20:21] [info] ----------------------------------------------------
+[2024-10-18 09:20:21] [info] The code coverage report is not what you expect? See the FAQ https://github.com/OpenCppCoverage/OpenCppCoverage/wiki/FAQ.

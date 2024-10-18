@@ -3,8 +3,7 @@
 #include <string>
 using namespace std;
 #include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.cpp"
-#include <D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.cpp>
-
+#include "D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.h"
 #include <vector>
 #include "Company.h"
 #include "Director.h"
@@ -83,27 +82,27 @@ int main()
                 cout << head.getInfoAboutOrder()<<"\nЦЕНА: " << head.getPrice()<<"\nПоставщик: "<<head.getSupplierName() << '\n';
             }
             else if (indexOfPotencialOrder == 4) {
-                ANTIGISTAT anti;
+                Antigistat anti;
                 cout << anti.getInfoAboutOrder() << "\nЦЕНА: " << anti.getPrice() << "\nПоставщик: " << anti.getSupplierName() << '\n';
             }
             else if (indexOfPotencialOrder == 3) {
-                IBYPROFEN iby;
+                Ibuprofen iby;
                 cout << iby.getInfoAboutOrder() << "\nЦЕНА: " << iby.getPrice() << "\nПоставщик: " << iby.getSupplierName() << '\n';
             }
             else if (indexOfPotencialOrder == 5) {
-                ACETAMINOPHEN aceta;
+                Acetaminophen aceta;
                 cout << aceta.getInfoAboutOrder() << "\nЦЕНА: " << aceta.getPrice() << "\nПоставщик: " << aceta.getSupplierName() << '\n';
             }
             else if (indexOfPotencialOrder == 6) {
-                ASPIRIN aspi;
+                Aspirin aspi;
                 cout << aspi.getInfoAboutOrder() << "\nЦЕНА: " << aspi.getPrice() << "\nПоставщик: " << aspi.getSupplierName() << '\n';
             }
             else if(indexOfPotencialOrder==7){
-                DICLOFENAC diclo;
+                Diclofenac diclo;
                 cout << diclo.getInfoAboutOrder() << "\nЦЕНА: " << diclo.getPrice() << "\nПоставщик: " << diclo.getSupplierName() << '\n';
             }
             else if (indexOfPotencialOrder == 8) {
-                KETOROLAC keto;
+                Ketorolac keto;
                 cout << keto.getInfoAboutOrder() << "\nЦЕНА: " << keto.getPrice() << "\nПоставщик: " << keto.getSupplierName() << '\n';
             }
             break;
