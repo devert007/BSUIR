@@ -1,4 +1,0 @@
-﻿  test.cpp
-D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.cpp(39,39): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-  LINK : не найден или не выполнена сборка D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab.exe при последней инкрементной компоновке; выполняется полная компоновка
-  tests_for_2_lab.vcxproj -> D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab.exe
