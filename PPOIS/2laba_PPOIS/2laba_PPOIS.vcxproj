@@ -128,14 +128,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2laba_PPOIS.cpp" />
+    <ClCompile Include="Client.cpp" />
     <ClCompile Include="Client.h" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="Order.cpp" />
+    <ClCompile Include="RegistrationMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Basket.h" />
+    <ClInclude Include="Acetaminophen.h" />
+    <ClInclude Include="Antigistat.h" />
+    <ClInclude Include="Aspirin.h" />
     <ClInclude Include="Company.h" />
-    <ClInclude Include="Lekar.h" />
+    <ClInclude Include="Diclofenac.h" />
+    <ClInclude Include="Director.h" />
+    <ClInclude Include="Headflex.h" />
+    <ClInclude Include="Human.h" />
+    <ClInclude Include="Ibyprofen.h" />
+    <ClInclude Include="Ketorelac.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="Mig.h" />
     <ClInclude Include="Order.h" />
-    <ClInclude Include="RegistrationWindow.h" />
+    <ClInclude Include="RegistrationMenu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
