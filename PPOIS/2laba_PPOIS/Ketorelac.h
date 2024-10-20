@@ -3,6 +3,8 @@
 class Ketorolac :public Order {
 private:
 	Company company;
+	string seial_number = "9876543210-1234567890-ABC";
+
 public:
 	Ketorolac() {
 		setName("KETOROLAC");
@@ -12,6 +14,15 @@ public:
 	}
 	string getSupplierName() {
 		return this->company.getName();
+	}
+	void getDoctorRecipe() {
+		if (this->company.getName() == "RussianFarm") {
+			cout <<"Препарат " << this->getName() << " если он вам необходим, проконсультируйтесь с вашим специалистом.\n";
+		}
+	}
+	void complete_impact() override
+	{
+		getDoctorRecipe();
 	}
 };
 

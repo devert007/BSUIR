@@ -3,7 +3,11 @@
 class Antigistat :public Order {
 private:
 	Company company;
+	string seial_number = "9876543210-ABC-DEF";
 public:
+	void destroy_infection() {
+		cout << "Принимайте препарат "<< this->getName() <<" больше двух недель и инфекция ослабнет\n";
+	}
 	Antigistat() {
 		setName("ANTIGISTAT");
 		setPrice(40);
@@ -12,5 +16,10 @@ public:
 	}
 	string getSupplierName() {
 		return this->company.getName();
+	}
+	
+	void complete_impact() override
+	{
+		destroy_infection();
 	}
 };

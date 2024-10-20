@@ -1,3 +1,6 @@
 ﻿  2laba_PPOIS.cpp
 D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.cpp(39,39): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  Manager.cpp
+  Создание кода...
+D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Manager.cpp(39): warning C4715: Manager::compare_an_order: значение возвращается не при всех путях выполнения
   2laba_PPOIS.vcxproj -> D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\2laba_PPOIS.exe

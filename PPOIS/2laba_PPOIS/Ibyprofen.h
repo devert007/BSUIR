@@ -3,6 +3,8 @@
 class Ibuprofen :public Order {
 private:
 	Company company;
+	string seial_number = "1234567890-ABCDEF";
+
 public:
 	Ibuprofen() {
 		setName("IBUPROFEN");
@@ -12,6 +14,10 @@ public:
 	}
 	string getSupplierName() {
 		return this->company.getName();
+	}
+	void complete_impact() override
+	{
+		cout << "Вам станет гораздо лучше после применения препарата " <<this->getName()<<" в течение 1 часа после его приема.\n";
 	}
 };
 
