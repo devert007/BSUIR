@@ -60,16 +60,11 @@ void put_forks(int i)
 
 void philosopher(int i)
 {
-  while (ate_hm_times[i] < 1)
-  {
-    think(i);
-    take_forks(i);
-    if (state[i] == EATING)
-    {
-      eat(i);
-      put_forks(i);
-    }
-  }
+
+  think(i);
+  take_forks(i);
+  eat(i);
+  put_forks(i);
 }
 
 int main()
@@ -83,15 +78,29 @@ int main()
   {
     ate_hm_times[i] = 0;
   }
-
+  int round = 0;
   for (int i = 0; i < N; i++)
   {
     if (fork() == 0)
     {
-      pidd[i] = getpid();
+      //pidd[i] = getpid();
       cout << "I'm  " << i << " philosopher, my pid is: " << getpid() << "\n";
       philosopher(i);
+      if (i == N-1   && round < 2)
+      {
+        cout<<"ROUND:"<<round<<'\n';
+        round++;
+        i = 0;
+        continue;
+      }
+      exit(0);
     }
   }
+
+  for (int i = 0; i < N; i++)
+  {
+    wait(NULL);
+  }
+
   return 0;
 }
