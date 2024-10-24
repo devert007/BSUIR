@@ -138,6 +138,7 @@
     <ClInclude Include="Employee.h" />
     <ClInclude Include="Human.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="OnlinePlatform.h" />
     <ClInclude Include="Operator.h" />
     <ClInclude Include="Profession.h" />
     <ClInclude Include="Sale.h" />

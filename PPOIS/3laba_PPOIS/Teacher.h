@@ -5,9 +5,11 @@ class Teacher :public Employee {
 private:
 	string profile;
 	string education;
+
 public:
 	Teacher(string name,string surname) {
 		setNameAndSurname(name, surname);
+		this->setSalaryForEmployee(1800);
 	}
 	Teacher(){}
 	void setProfile(string profile) {

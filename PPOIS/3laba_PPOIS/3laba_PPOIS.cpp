@@ -6,7 +6,7 @@
 #include "Sale.h"
 #include "Student.h"
 #include "Teacher.h"
-
+#include "OnlinePlatform.h"
 #include <string>
 #include <vector>
 #include <iostream>

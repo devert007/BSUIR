@@ -1,2 +1,2 @@
 ﻿  3laba_PPOIS.cpp
-  3laba_PPOIS.vcxproj -> D:\LABY\BSUIR\3laba_PPOIS\x64\Debug\3laba_PPOIS.exe
+D:\LABY\BSUIR\PPOIS\3laba_PPOIS\3laba_PPOIS.cpp(9,10): fatal  error C1083: Не удается открыть файл включение: OnlinePlatfrom.h: No such file or directory,
