@@ -83,12 +83,12 @@ int main()
   {
     if (fork() == 0)
     {
-      //pidd[i] = getpid();
+      pidd[i] = getpid();
       cout << "I'm  " << i << " philosopher, my pid is: " << getpid() << "\n";
       philosopher(i);
-      if (i == N-1   && round < 2)
+      if (i == N - 1 && round < 2)
       {
-        cout<<"ROUND:"<<round<<'\n';
+        cout << "ROUND:" << round << '\n';
         round++;
         i = 0;
         continue;
