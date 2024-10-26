@@ -102,12 +102,63 @@ def find_hamilton_cycles(graph):
     else:
         print("Your graph contains cut vertices or cut edges, so it does not have any Hamiltonian cycles.")
 
+def find_eulerian_cycles(graph):################
+    cut_vertices = list(nx.articulation_points(graph))
+    cut_edges = list(nx.bridges(graph))
+    if not cut_edges and not cut_vertices:
+        cycles = list(nx.find_cycle(graph))
+        if cycles:
+            print("Hamiltonian cycles found:")
+            for cycle in cycles:
+                print(cycle)
+        else:
+            print("Your graph does not have any Hamiltonian cycles.")
+    else:
+        print("Your graph contains cut vertices or cut edges, so it does not have any Hamiltonian cycles.")
+
+def find_all_path_between_two_nodes(graph):
+  source_node = input("Enter the source node: ")
+  target_node = input("Enter the target node: ")
+  all_paths = list(nx.all_simple_paths(graph, source_node, target_node))
+  # Вывод всех найденных путей
+  for path in all_paths:
+      print(path)
+def find_shortest_path_between_two_nodes(graph):ой 
+  source_node = input("Enter the source node: ")
+  target_node = input("Enter the target node: ")
+  all_paths = list(nx.shortest_path(graph, source_node, target_node))
+  # Вывод всех найденных путей
+  for path in all_paths:
+      print(path)
+
+
+
+
+def find_center_graph(graph):
+  return print("centerOfGraph: ", nx.center(graph))
+
+
+def find_graph_radius(graph):
+  return print("radius  of Graph: ", nx.radius(graph))
+
+def find_graph_diametr(graph):
+  return print("diametr of Graph: ", nx.diameter(graph))
+
+def find_cortesian_product(graph1, graph2):
+  plt.figure()
+  nx.draw(nx.cartesian_product(graph1, graph2), with_labels=True, font_weight='bold')
+  plt.show() 
+
+def find_tensor_product(graph1, graph2):
+  plt.figure()
+  nx.draw(nx.tensor_product(graph1, graph2), with_labels=True, font_weight='bold')
+  plt.show() 
 
 
 # G = create_graph()
 G = nx.Graph()
 G.add_edges_from([(1, 2), (2, 5), (3, 4), (5, 1),(5,3),(4,2)])
-find_hamilton_cycles(G)
+find_center_graph(G)
 plt.figure()
 nx.draw(G, with_labels=True, font_weight='bold')
 plt.show()
