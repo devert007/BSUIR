@@ -6,7 +6,7 @@ private:
 	Contact phone;
 	Contact email;
 public:
-	Operator();
+	Operator(string phoneNumber,string email);
 	void changeOperatorNumber(string new_phoneNumber);
 	void changeOperatorEmail(string new_emailNumber);
 

@@ -128,11 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="3laba_PPOIS.cpp" />
+    <ClCompile Include="Course.cpp" />
+    <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Operator.cpp" />
     <ClCompile Include="Teacher.cpp" />
     <ClCompile Include="Human.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Comment.h" />
     <ClInclude Include="Contact.h" />
     <ClInclude Include="Course.h" />
     <ClInclude Include="Employee.h" />

@@ -1,8 +1,8 @@
 #include "Operator.h"
 
-Operator::Operator() {
-	this->phone.setContactName("Phone");
-	this->email.setContactName("Email");
+Operator::Operator(string phoneNumber,string email) {
+	this->phone.setContactName(phoneNumber);
+	this->email.setContactName(email);
 }
 void Operator::changeOperatorNumber(string new_phoneNumber) {
 	this->phone.setContactName(new_phoneNumber);

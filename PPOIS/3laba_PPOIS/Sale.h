@@ -2,8 +2,10 @@
 class Sale {
 private:
 	int sale;
-	string data;
 public:
+	Sale(int sale) {
+		this->sale = sale;
+	}
 	int getSaleValue() {
 		return this->sale;
 	}

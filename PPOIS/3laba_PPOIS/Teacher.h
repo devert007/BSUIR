@@ -5,7 +5,7 @@ class Teacher :public Employee {
 private:
 	string profile;
 	string education;
-
+	int stageHomework=0;
 public:
 	Teacher(string name,string surname) {
 		setNameAndSurname(name, surname);
@@ -24,6 +24,14 @@ public:
 	string getEdu() {
 		return this->education;
 	}
-
-
+	bool setHomework(int stage) {
+		if (stage != this->stageHomework) {
+			this->stageHomework = stage;
+			return true;
+		}
+		return false;
+	}
+	int getStageHomework() {
+		return this->stageHomework;
+	}
 };

@@ -8,11 +8,18 @@ private:
 	Course course;
 	int stageOfCourse;
 public:
+	Student(Course course){
+		this->course=course;
+	};
 	void doHomework() {
-		//если учитель курса задал задание то делаем домашку и стадия на следующую
+		if(this->course.getTeacher().setHomework(1))
 		this->stageOfCourse++;
+
 	}
 	int getStudentStage() {
 		return this->stageOfCourse;
+	}
+	Course getStudentCourse() {
+		return this->course;
 	}
 };
