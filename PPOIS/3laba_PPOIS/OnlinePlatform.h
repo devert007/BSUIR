@@ -53,4 +53,5 @@ public:
 	string getOrientation() {
 		return this->orientation;
 	}
+	
 };

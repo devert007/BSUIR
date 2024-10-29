@@ -135,6 +135,7 @@
     <ClCompile Include="Human.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Certificate.h" />
     <ClInclude Include="Comment.h" />
     <ClInclude Include="Contact.h" />
     <ClInclude Include="Course.h" />

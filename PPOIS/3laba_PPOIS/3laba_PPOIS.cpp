@@ -104,11 +104,11 @@ int main()
 		getInfoAboutPlatform(platform);
 	}
 
-	cout << "Хотите увидеть список курсов которые мы предлагаем? (1 - да, 0 - нет)\n";
-	int choose_client_about_info_platform;
-	cin >> choose_client_about_info_platform;
-	if (choose_client_about_info_platform == 1) {
-		getInfoAboutPlatform(platform);
+	cout << "\nХотите увидеть список курсов которые мы предлагаем? (1 - да, 0 - нет)\n";
+	int choose_client_about_info_cources;
+	cin >> choose_client_about_info_cources;
+	if (choose_client_about_info_cources == 1) {
+	//	getInfoAboutPlatform(platform);
 	}
 	
 
