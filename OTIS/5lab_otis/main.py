@@ -20,6 +20,12 @@ def add_node(graph):
 def rename_graph():
   G.name = input("New graph name: ")
   return G
+def print_graph(graph):
+    plt.figure()
+    pos = nx.get_node_attributes(graph, 'pos')
+    nx.draw(graph, pos=pos, with_labels=True, font_weight='bold')
+    plt.show()
+
 def create_edge():
   source_node = input("Enter the source node: ")
   target_node = input("Enter the target node: ")
@@ -48,12 +54,19 @@ def remove_node(node,graph):
   return graph
 def print_info(graph):
   print ("name:", graph.name)
-  print ("type:", graph.type)
+  print ("Is weight?:", nx.is_weighted(graph))
   print ("number of nodes:", graph.number_of_nodes())
   print ("number of edges:", graph.number_of_edges())
   return graph
-def move_node(node, graph):################################
-  return
+def move_node( graph):################################
+  node = input("Enter a node that you need to move")
+  new_position_x = input("Enten a new coordinate x ")
+  new_position_y = input("Enten a new coordinate y ")
+  if node in graph.nodes():
+        graph.nodes[node]['pos'] = (new_position_x,new_position_y)
+  else:
+        print(f"Node {node} not found in the graph.")
+  return graph
 
 def is_tree(graph):
   return print(nx.is_tree(graph))
@@ -135,6 +148,8 @@ G=create_graph()
 isCycle=True
 while(isCycle):
   choice=int(input("Choose operation:\n1.Add node\n2.Add edge\n3.Remove edge\n4.Rename node\n5.Remove node\n6.Print info\n7.Move node\n8.Is tree\n9.Get incidence matrix\n10.Make binary tree\n11.Make tree\n12.Find Hamiltonian cycles\n13.Find Eulerian cycles\n14.Find all paths between two nodes\n15.Find shortest path between two nodes\n16.Find center of graph\n17.Find radius of graph\n18.Find diametr of graph\n19.Find cortesian product\n20.Find tensor product\n"))
+  if choice ==0:
+    print_graph(G)
   if choice==1:
     add_node(G)
   elif choice==2:
@@ -182,6 +197,4 @@ while(isCycle):
     find_tensor_product(G, G)
   else:
     isCycle=False
-plt.figure()
-nx.draw(G, with_labels=True, font_weight='bold')
-plt.show()
+
