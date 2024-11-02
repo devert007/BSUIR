@@ -1,9 +1,9 @@
 #pragma once
 #include <string>
-#include "Contact.h"
-#include "Comment.h"
-#include "Manager.h"
-#include "Operator.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Contact.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Comment.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Manager.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Operator.h"
 #include <vector>
 using namespace std;
 class OnlinePlatform {

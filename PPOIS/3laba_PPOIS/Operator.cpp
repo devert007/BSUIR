@@ -1,4 +1,4 @@
-#include "Operator.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Operator.h"
 
 Operator::Operator(string phoneNumber,string email) {
 	this->phone.setContactName(phoneNumber);

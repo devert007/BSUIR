@@ -1,3 +1,2 @@
-﻿  test.cpp
-D:\LABY\BSUIR\PPOIS\2laba_PPOIS\Client.cpp(39,39): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+﻿  test_ketorelac.cpp
   tests_for_2_lab.vcxproj -> D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab.exe

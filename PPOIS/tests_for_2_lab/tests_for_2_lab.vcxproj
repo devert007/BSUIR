@@ -50,7 +50,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>X64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -99,6 +99,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="test_headflex.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -106,6 +107,16 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="test_acetaminophen.cpp" />
+    <ClCompile Include="test_antigistat.cpp" />
+    <ClCompile Include="test_aspirin.cpp" />
+    <ClCompile Include="test_client.cpp" />
+    <ClCompile Include="test_company_and_director.cpp" />
+    <ClCompile Include="test_diclofenac.cpp" />
+    <ClCompile Include="test_ibyprofen.cpp" />
+    <ClCompile Include="test_ketorelac.cpp" />
+    <ClCompile Include="test_mig.cpp" />
+    <ClCompile Include="test_order.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

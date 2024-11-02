@@ -5,9 +5,10 @@ void Course:: setDiscountPrice() {
 	}
 }
 Course::Course() {}
-Course::Course(string nameCourse, Teacher teacher) {
+Course::Course(string nameCourse, Teacher teacher,string info) {
 	this->profession.setProfessionName(nameCourse);
 	this->teacher = teacher;
+	this->profession.setProfessionInfo(info);
 }
 int Course::getPrice() {
 	return this->price;
@@ -30,4 +31,7 @@ vector<Sale> Course::getSales() {
 }
 Profession Course::getProfession() {
 	return this->profession;
+}
+void Course::setInfoAboutCourse(const string& info) {
+	this->profession.setProfessionInfo(info);
 }

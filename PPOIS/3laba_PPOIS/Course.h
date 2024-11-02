@@ -16,12 +16,13 @@ private:
 
 public:
 	Course();
-	Course(string nameCourse, Teacher teacher);
+	Course(string nameCourse, Teacher teacher,string info);
 	int getPrice();
 	void setPrice(int price);
 	Teacher getTeacher();
 	void addSale(Sale new_sale);
 	void removeSale(int index);
+	void setInfoAboutCourse(const string&info);
 	vector<Sale>getSales();
 	Profession getProfession();
 };

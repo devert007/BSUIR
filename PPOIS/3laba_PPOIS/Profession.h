@@ -10,16 +10,16 @@ private:
     int salary;
 public:
     std::string getProfessionName() const {
-        return profession_name;
+        return  this->profession_name;
     }
     void setProfessionName(const std::string& name) {
-        profession_name = name;
+       this-> profession_name = name;
     }
     std::string getProfessionInfo() const {
-        return profession_info;
+        return  this->profession_info;
     }
     void setProfessionInfo(const std::string& info) {
-        profession_info = info;
+        this->profession_info = info;
     }
     void setProfessionSalary(int salary) {
         this->salary = salary;

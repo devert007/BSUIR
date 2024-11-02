@@ -9,6 +9,7 @@ private:
 	string name_and_surname;
 	string mark;
 public:
+	Certificate(){}
 	Certificate(string name_surname,Course course,int stage){
 		this->course =course;
 		this->name_and_surname = name_surname;

@@ -1,4 +1,4 @@
-#include "Manager.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Manager.h"
 
 Manager::Manager(string phoneNumber, string email) {
 	this->phone.setContactName(phoneNumber);

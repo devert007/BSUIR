@@ -1,6 +1,6 @@
 #pragma once
-#include "Employee.h"
-#include "Human.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Employee.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Human.h"
 class Teacher :public Employee {
 private:
 	string profile;
@@ -25,11 +25,9 @@ public:
 		return this->education;
 	}
 	bool setHomework(int stage) {
-		if (stage != this->stageHomework) {
-			this->stageHomework = stage;
-			return true;
-		}
-		return false;
+		
+		this->stageHomework=stage;
+		return true;
 	}
 	int getStageHomework() {
 		return this->stageHomework;

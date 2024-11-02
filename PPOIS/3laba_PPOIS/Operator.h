@@ -1,6 +1,6 @@
 #pragma once
-#include "Employee.h"
-#include "Contact.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Employee.h"
+#include "D:/LABY/BSUIR/PPOIS/3laba_PPOIS/Contact.h"
 class Operator :public Employee {
 private:
 	Contact phone;

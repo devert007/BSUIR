@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>D:\LABY\BSUIR\PPOIS\3laba_PPOIS\x64\Debug\test3.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="MainTest.testAllfunctions" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
