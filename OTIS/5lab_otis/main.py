@@ -34,7 +34,7 @@ def create_edge():
   else:
     print(f"Node {source_node} or {target_node} not found in the graph.")
   return G
-def remove_edge(source_node, target_node):
+def remove_edge(source_node, target_node,graph):
   if source_node in G.nodes() and target_node in G.nodes():
     graph.remove_edge(source_node, target_node)
   else:
@@ -157,7 +157,7 @@ while(isCycle):
   elif choice==3:
     source_node=input("Enter source node: ")
     target_node=input("Enter target node: ")
-    G=remove_edge(source_node, target_node)
+    G=remove_edge(source_node, target_node,G)
   elif choice==4:
     old_node=input("Enter old node: ")
     new_node=input("Enter new node: ")
