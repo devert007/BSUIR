@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/perm/group" idtf="concept_dish" shapeColor="0" id="1689610106544" parent="1689613138192" left="0" top="0" right="81" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="576.5" y="435.5" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/group" idtf="" shapeColor="0" id="1689610108416" parent="1689613138192" x="444" y="434" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/group" idtf="" shapeColor="0" id="1689610108624" parent="1689613138192" x="358.073" y="370.358" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_choose_dish" shapeColor="0" id="1689614259312" parent="1689613138192" left="0" top="0" right="105" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="242.573" y="309.858" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/tuple" idtf="" shapeColor="0" id="1689610108000" parent="1689613138192" x="443" y="371" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="" shapeColor="0" id="1689610107376" parent="1689613138192" x="360.073" y="259.358" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="concept_human" shapeColor="0" id="1689614266176" parent="1689613138192" left="0" top="0" right="96" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="360.073" y="177.358" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1689614961856" parent="1689613138192" id_b="1689610108624" id_e="1689610108000" b_x="358.073" b_y="370.358" e_x="443" e_y="371" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1689614965216" parent="1689613138192" id_b="1689614259312" id_e="1689614968816" b_x="242.573" b_y="309.858" e_x="-278" e_y="-95.0005" dotBBalance="0" dotEBalance="0.450908">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1689614963536" parent="1689613138192" id_b="1689614266176" id_e="1689610107376" b_x="360.073" b_y="177.358" e_x="360.073" e_y="259.358" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1689614966416" parent="1689613138192" id_b="1689610106544" id_e="1689610108416" b_x="576.5" b_y="435.5" e_x="444" e_y="434" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="0" id="1689614968816" parent="1689613138192" id_b="1689610107376" id_e="1689610108624" b_x="360.073" b_y="259.358" e_x="358.073" e_y="370.358" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1689614965936" parent="1689613138192" id_b="1689610108000" id_e="1689610108416" b_x="443" b_y="371" e_x="444" e_y="434" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="template_choose_dish" shapeColor="0" id="1689613138192" parent="0" left="0" top="0" right="131" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" idtf_pos_x="152" idtf_pos_y="-151">
+            <points>
+                <point x="60.0733" y="139.358"/>
+                <point x="53.0733" y="464.358"/>
+                <point x="619.073" y="474.358"/>
+                <point x="622.073" y="143.358"/>
+            </points>
+        </contour>
+    </staticSector>
+</GWF>
