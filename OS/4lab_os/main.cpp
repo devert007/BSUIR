@@ -10,14 +10,14 @@ int main()
   auto ptr2 = (int *)memory.alloc(sizeof(int));
   *ptr2 = 2;
   auto ptr3 = (int *)memory.alloc(sizeof(int));
-  printf("%d\n", memory.get_page_count() + 1);
+
   *ptr3 = 3;
 
-  //memory.free(ptr2);
+  memory.free(ptr2);
 
   auto ptr4 = (int *)memory.alloc(sizeof(int));
   *ptr4 = 4;
-
-  printf("%d %d %d", *ptr, *ptr2, *ptr3);
+  printf("%d\n", memory.get_page_count() + 1);
+  printf("%d %d %d ", *ptr, *ptr2, *ptr3);
   return 0;
 }
