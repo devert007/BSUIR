@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(My4laba VERSION 0.1.0 LANGUAGES C CXX)
+include(CTest)
+enable_testing()
+add_executable(My4laba main.cpp)
+set_property(TARGET My4laba PROPERTY CXX_STANDART 17)

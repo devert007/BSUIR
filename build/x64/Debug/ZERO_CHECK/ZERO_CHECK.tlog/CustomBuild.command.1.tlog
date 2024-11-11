@@ -1,0 +1,10 @@
+^D:\LABY\BSUIR\BUILD\CMAKEFILES\A3CE84FA2FCB8B1CA85C0005E935C39E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/LABY/BSUIR/PPOIS/4laba_PPOIS -BD:/LABY/BSUIR/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/LABY/BSUIR/build/My4laba.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

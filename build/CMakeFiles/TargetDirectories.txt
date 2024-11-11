@@ -1,0 +1,8 @@
+D:/LABY/BSUIR/build/CMakeFiles/Experimental.dir
+D:/LABY/BSUIR/build/CMakeFiles/Nightly.dir
+D:/LABY/BSUIR/build/CMakeFiles/Continuous.dir
+D:/LABY/BSUIR/build/CMakeFiles/NightlyMemoryCheck.dir
+D:/LABY/BSUIR/build/CMakeFiles/My4laba.dir
+D:/LABY/BSUIR/build/CMakeFiles/RUN_TESTS.dir
+D:/LABY/BSUIR/build/CMakeFiles/ALL_BUILD.dir
+D:/LABY/BSUIR/build/CMakeFiles/ZERO_CHECK.dir
