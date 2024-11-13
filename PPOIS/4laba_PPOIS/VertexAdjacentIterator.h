@@ -29,10 +29,10 @@ public:
     if (edges[currentEdgeIndex].first == vertexID)
       return vertices.at(edges[currentEdgeIndex].second);
     else
-      return  vertices.at(edges[currentEdgeIndex].first);
+      return vertices.at(edges[currentEdgeIndex].first);
   }
   // Оператор инкремента
-   VertexAdjacentIterator& operator++()
+  VertexAdjacentIterator &operator++()
   {
     // Перебор рёбер, смежных вершине
     do

@@ -7,45 +7,45 @@ using namespace std;
 template <typename T>
 class EdgeIterator
 {
-    using VectorIterator = typename vector<pair<int, int>>::iterator;
+  using VectorIterator = typename vector<pair<int, int>>::iterator;
 
 public:
-    EdgeIterator(VectorIterator it, VectorIterator end_it) : current(it), end(end_it) {}
+  EdgeIterator(VectorIterator it, VectorIterator end_it) : current(it), end(end_it) {}
 
-    EdgeIterator &operator++()
+  EdgeIterator &operator++()
+  {
+    if (current != end)
     {
-        if (current != end)
-        {
-            ++current;
-        }
-        return *this;
+      ++current;
     }
+    return *this;
+  }
 
-    EdgeIterator &operator--()
+  EdgeIterator &operator--()
+  {
+    if (current != end)
     {
-        if (current != end)
-        {
-            --current;
-        }
-        return *this;
+      --current;
     }
+    return *this;
+  }
 
-    pair<int, int> operator*() const
-    {
-        return *current;
-    }
+  pair<int, int> operator*() const
+  {
+    return *current;
+  }
 
-    bool operator==(const EdgeIterator &other) const
-    {
-        return current == other.current;
-    }
+  bool operator==(const EdgeIterator &other) const
+  {
+    return current == other.current;
+  }
 
-    bool operator!=(const EdgeIterator &other) const
-    {
-        return current != other.current;
-    } 
+  bool operator!=(const EdgeIterator &other) const
+  {
+    return current != other.current;
+  }
 
 private:
-    VectorIterator current;
-    VectorIterator end;
+  VectorIterator current;
+  VectorIterator end;
 };
