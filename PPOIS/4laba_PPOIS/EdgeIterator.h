@@ -3,41 +3,49 @@
 #include <vector>
 
 using namespace std;
+
 template <typename T>
 class EdgeIterator
 {
-private:
-  using VectorIterator = typename vector<pair<int, int>>::iterator;
-  VectorIterator current;
-  VectorIterator end;
+    using VectorIterator = typename vector<pair<int, int>>::iterator;
 
 public:
-  EdgeIterator(MapIterator it, MapIterator end_it) : current(it), end(end_it) {}
+    EdgeIterator(VectorIterator it, VectorIterator end_it) : current(it), end(end_it) {}
 
-  EdgeIterator &operator++()
-  {
-    if (current != end)
+    EdgeIterator &operator++()
     {
-      ++current;
+        if (current != end)
+        {
+            ++current;
+        }
+        return *this;
     }
-    return *this;
-  }
 
-  EdgeIterator &operator--()
-  {
-    if (current != end)
+    EdgeIterator &operator--()
     {
-      --current;
+        if (current != end)
+        {
+            --current;
+        }
+        return *this;
     }
-    return *this;
-  }
-  bool operator==(const EdgeIterator &other) const
-  {
-    return current == other.current;
-  }
 
-  bool operator!=(const EdgeIterator &other) const
-  {
-    return current != other.current;
-  }
+    pair<int, int> operator*() const
+    {
+        return *current;
+    }
+
+    bool operator==(const EdgeIterator &other) const
+    {
+        return current == other.current;
+    }
+
+    bool operator!=(const EdgeIterator &other) const
+    {
+        return current != other.current;
+    } 
+
+private:
+    VectorIterator current;
+    VectorIterator end;
 };

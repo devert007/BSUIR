@@ -144,10 +144,27 @@ VertexIterator<T> OrientedGraph<T>::endVertices()
   return VertexIterator<T>(vertices.end(), vertices.end());
 }
 template <typename T>
-EdgeIterator<T> OrientedGraph<T>::beginEdges(){
+EdgeIterator<T> OrientedGraph<T>::beginEdges()
+{
   return EdgeIterator<T>(edges.begin(), edges.end());
 }
 template <typename T>
-EdgeIterator<T> OrientedGraph<T>::endEdges(){
+EdgeIterator<T> OrientedGraph<T>::endEdges()
+{
   return EdgeIterator<T>(edges.end(), edges.end());
+}
+template <typename T>
+
+EdgeIncidentIterator<T> OrientedGraph<T>::begin_incidentEdges(const vertexData &vertex)
+{
+  vertexID vID = findVertexID(vertex); 
+    return EdgeIncidentIterator<T>(matrix_incident,edges, vID,0);
+}
+template <typename T>
+
+EdgeIncidentIterator<T> OrientedGraph<T>::end_incidentEdges(const vertexData &vertex)
+{
+  vertexID vID = findVertexID(vertex);
+  
+    return EdgeIncidentIterator<T>(matrix_incident,edges, vID, edges.size());
 }

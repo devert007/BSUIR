@@ -4,6 +4,7 @@
 using namespace std;
 #include "VertexIterator.h"
 #include "EdgeIterator.h"
+#include "EdgeIncidentIterator.h"
 
 template <typename T>
 class OrientedGraph
@@ -36,4 +37,8 @@ public:
   VertexIterator<T> endVertices();
   EdgeIterator<T> beginEdges();
   EdgeIterator<T> endEdges();
+  EdgeIncidentIterator<T> begin_incidentEdges(const vertexData&vertex);
+  EdgeIncidentIterator<T> end_incidentEdges(const vertexData&vertex);
+
+
 };
