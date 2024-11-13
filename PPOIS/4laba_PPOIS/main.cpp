@@ -27,9 +27,16 @@ int main()
         auto edge = *it;
         std::cout << "(" << edge.first << ", " << edge.second << ") ";
     }
-   for (auto it = graph.begin_incidentEdges("b"); it != graph.end_incidentEdges("b"); ++it) {
-    auto edge = *it;  
-    cout << "Edge: " << edge.first << " -> " << edge.second << endl;
+
+    for (auto it = graph.begin_incidentEdges("b"); it != graph.end_incidentEdges("b"); ++it)
+    {
+        auto edge = *it;
+        cout << "Edge: " << edge.first << " -> " << edge.second << endl;
+    }
+    // смежность
+    for (auto it = graph.begin_adjacentVertices("b"); it != graph.end_adjacentVertices("b"); ++it)
+    {
+        cout << *it << endl;
     }
 
     return 0;

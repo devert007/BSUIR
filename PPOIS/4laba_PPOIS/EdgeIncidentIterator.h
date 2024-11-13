@@ -9,13 +9,13 @@ class EdgeIncidentIterator
 {
 private:
   const vector<vector<int>> matrix_incident;
-  const vector<pair<int, int>>edges;
+  const vector<pair<int, int>> edges;
   int vertexID;
   size_t currentEdgeIndex;
 
 public:
-  EdgeIncidentIterator(const vector<vector<int>>mat, const vector<pair<int, int>> edg, int vertexID,size_t currentEdgeIndex)
-      :  matrix_incident(mat), edges(edg), vertexID(vertexID), currentEdgeIndex(currentEdgeIndex) {}
+  EdgeIncidentIterator(const vector<vector<int>> mat, const vector<pair<int, int>> edg, int vertexID, size_t currentEdgeIndex)
+      : matrix_incident(mat), edges(edg), vertexID(vertexID), currentEdgeIndex(currentEdgeIndex) {}
 
   bool operator!=(const EdgeIncidentIterator &other)
   {
@@ -34,7 +34,7 @@ public:
     do
     {
       ++currentEdgeIndex;
-    } while (currentEdgeIndex <edges.size() &&
+    } while (currentEdgeIndex < edges.size() &&
              !(matrix_incident[vertexID][currentEdgeIndex] != 0));
     return *this;
   }

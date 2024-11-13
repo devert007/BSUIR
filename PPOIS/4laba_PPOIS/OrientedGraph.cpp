@@ -157,14 +157,26 @@ template <typename T>
 
 EdgeIncidentIterator<T> OrientedGraph<T>::begin_incidentEdges(const vertexData &vertex)
 {
-  vertexID vID = findVertexID(vertex); 
-    return EdgeIncidentIterator<T>(matrix_incident,edges, vID,0);
+  vertexID vID = findVertexID(vertex);
+  return EdgeIncidentIterator<T>(matrix_incident, edges, vID, 0);
 }
 template <typename T>
 
 EdgeIncidentIterator<T> OrientedGraph<T>::end_incidentEdges(const vertexData &vertex)
 {
   vertexID vID = findVertexID(vertex);
-  
-    return EdgeIncidentIterator<T>(matrix_incident,edges, vID, edges.size());
+
+  return EdgeIncidentIterator<T>(matrix_incident, edges, vID, edges.size());
+}
+template <typename T>
+VertexAdjacentIterator<T> OrientedGraph<T>::begin_adjacentVertices(const vertexData &vertex)
+{
+  vertexID vId = findVertexID(vertex);
+  return VertexAdjacentIterator<T>(edges, vId, vertices, 0);
+}
+template <typename T>
+VertexAdjacentIterator<T> OrientedGraph<T>::end_adjacentVertices(const vertexData &vertex)
+{
+  vertexID vId = findVertexID(vertex);
+  return VertexAdjacentIterator<T>(edges, vId, vertices, edges.size());
 }

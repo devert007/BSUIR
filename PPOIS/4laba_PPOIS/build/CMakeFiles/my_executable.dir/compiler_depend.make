@@ -134,7 +134,8 @@ CMakeFiles/my_executable.dir/main.cpp.obj: D:/LABY/BSUIR/PPOIS/4laba_PPOIS/main.
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_set.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_multiset.h \
   D:/LABY/BSUIR/PPOIS/4laba_PPOIS/EdgeIterator.h \
-  D:/LABY/BSUIR/PPOIS/4laba_PPOIS/EdgeIncidentIterator.h
+  D:/LABY/BSUIR/PPOIS/4laba_PPOIS/EdgeIncidentIterator.h \
+  D:/LABY/BSUIR/PPOIS/4laba_PPOIS/VertexAdjacentIterator.h
 
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ostream:
@@ -392,3 +393,5 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_multiset.h:
 D:/LABY/BSUIR/PPOIS/4laba_PPOIS/EdgeIterator.h:
 
 D:/LABY/BSUIR/PPOIS/4laba_PPOIS/EdgeIncidentIterator.h:
+
+D:/LABY/BSUIR/PPOIS/4laba_PPOIS/VertexAdjacentIterator.h:
