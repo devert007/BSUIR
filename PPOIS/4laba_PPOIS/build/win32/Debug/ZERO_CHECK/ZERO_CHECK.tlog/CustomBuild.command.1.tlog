@@ -1,0 +1,10 @@
+^D:\LABY\BSUIR\PPOIS\4LABA_PPOIS\BUILD\CMAKEFILES\7A97CE075526EA9C0A1F530826834547\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LABY/BSUIR/PPOIS/4laba_PPOIS -BD:/LABY/BSUIR/PPOIS/4laba_PPOIS/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/LABY/BSUIR/PPOIS/4laba_PPOIS/build/MyProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

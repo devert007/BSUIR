@@ -1,0 +1,4 @@
+D:\LABY\BSUIR\PPOIS\test4lab\x64\Debug\test4lab.vcxproj.CopyComplete
+D:\LABY\BSUIR\PPOIS\test4lab\x64\Debug\test4lab.exe
+D:\LABY\BSUIR\PPOIS\test4lab\x64\Debug\gtest.pdb
+D:\LABY\BSUIR\PPOIS\test4lab\x64\Debug\gtest_main.pdb
