@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/var/perm/general" idtf="" shapeColor="193" id="1742716745344" parent="1742720696752" x="436.073" y="520.358" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="concept_human" shapeColor="0" id="1742716744304" parent="1742720696752" left="0" top="0" right="96" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="314.073" y="519.358" haveBus="false" idtf_pos="4">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1742798452272" parent="1742720696752" id_b="1742716744304" id_e="1742716745344" b_x="314.073" b_y="519.358" e_x="436.073" e_y="520.358" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="template_search_human" shapeColor="0" id="1742720696752" parent="0" left="0" top="0" right="144" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" idtf_pos_x="152" idtf_pos_y="-151">
+            <points>
+                <point x="45.0733" y="331.358"/>
+                <point x="38.0733" y="656.358"/>
+                <point x="604.073" y="666.358"/>
+                <point x="607.073" y="335.358"/>
+            </points>
+        </contour>
+    </staticSector>
+</GWF>
