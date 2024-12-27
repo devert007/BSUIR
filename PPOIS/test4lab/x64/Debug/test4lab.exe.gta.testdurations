@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>D:\LABY\BSUIR\PPOIS\test4lab\x64\Debug\test4lab.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="test_orientedgraph_class.oriented_graph_test" Duration="1" />
+    <TestDuration Test="test_edgeIterator_class.edgeIterator_test" Duration="1" />
+    <TestDuration Test="test_vertexIterator_class.vertexIterator_test" Duration="1" />
+    <TestDuration Test="test_edgeIncidentIterator_class.edgeIncidentIterator_test" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

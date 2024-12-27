@@ -1,0 +1,11 @@
+﻿  main.cpp
+D:\LABY\BSUIR\PPOIS\4laba_PPOIS\OrientedGraph.cpp(17,23): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+D:\LABY\BSUIR\PPOIS\4laba_PPOIS\OrientedGraph.cpp(16,1): message : во время компиляции функции-члена класс шаблон "int OrientedGraph<std::string>::getCountVertices(void)"
+D:\LABY\BSUIR\PPOIS\4laba_PPOIS\main.cpp(17,36): message : см. первую ссылку на "OrientedGraph<std::string>::getCountVertices" в "main"
+D:\LABY\BSUIR\PPOIS\4laba_PPOIS\main.cpp(9,25): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "OrientedGraph<std::string>"
+D:\LABY\BSUIR\PPOIS\4laba_PPOIS\OrientedGraph.cpp(126,30): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\LABY\BSUIR\PPOIS\4laba_PPOIS\OrientedGraph.cpp(117,1): message : во время компиляции функции-члена класс шаблон "void OrientedGraph<std::string>::printMatrix(void)"
+D:\LABY\BSUIR\PPOIS\4laba_PPOIS\main.cpp(18,20): message : см. первую ссылку на "OrientedGraph<std::string>::printMatrix" в "main"
+D:\LABY\BSUIR\PPOIS\4laba_PPOIS\OrientedGraph.cpp(48): warning C4715: OrientedGraph<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::findVertexID: значение возвращается не при всех путях выполнения
+  LINK : не найден или не выполнена сборка D:\LABY\BSUIR\PPOIS\test4lab\x64\Debug\test4lab.exe при последней инкрементной компоновке; выполняется полная компоновка
+  test4lab.vcxproj -> D:\LABY\BSUIR\PPOIS\test4lab\x64\Debug\test4lab.exe

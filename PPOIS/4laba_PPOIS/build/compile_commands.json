@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/LABY/BSUIR/PPOIS/4laba_PPOIS/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -std=gnu++1z -o CMakeFiles\\my_executable.dir\\main.cpp.obj -c D:\\LABY\\BSUIR\\PPOIS\\4laba_PPOIS\\main.cpp",
+  "file": "D:/LABY/BSUIR/PPOIS/4laba_PPOIS/main.cpp",
+  "output": "CMakeFiles/my_executable.dir/main.cpp.obj"
+}
+]

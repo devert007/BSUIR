@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta charset="utf-8"/>
+	    <title>OrientedGraph.cpp</title>
+	    <link href="../../third-party/google-code-prettify/prettify-CppCoverage.css" type="text/css" rel="stylesheet" />
+	    <script type="text/javascript" src="../../third-party/google-code-prettify/prettify.js"></script>
+	</head>
+    <body onload="prettyPrint()">
+        <h4></h4>
+        <pre class="prettyprint lang-cpp linenums">
+#include "OrientedGraph.h"
+template &lt;typename T&gt;
+typename OrientedGraph&lt;T&gt;::vertexID OrientedGraph&lt;T&gt;::addVertex(const vertexData &amp;data)
+<span style = "background-color:#dfd">{
+  vertexID id = nextVertexID++;
+  vertices[id] = data;
+  for (auto row : matrix_incident)</span>
+  {
+<span style = "background-color:#dfd">    row.push_back(0); // Ð´Ð¾Ð¿Ð¾Ð»Ð½ÑÐµÐ¼ ÐºÐ°Ð¶Ð´ÑÑ ÑÑÑÐ¾ÐºÑ Ð½ÑÐ»ÐµÐ¼ Ð´Ð»Ñ Ð½Ð°ÑÐµÐ¹ Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐµÑÑÐ¸Ð½Ñ
+  }
+  matrix_incident.emplace_back(edges.size(), 0); // Ð´Ð¾Ð¿Ð¾Ð»Ð½ÑÐµÐ¼ ÐµÑÐµ Ð¾Ð´Ð½Ñ ÑÑÑÐ¾ÐºÑ Ð½Ð°ÑÐµÐ¹ Ð¼Ð°ÑÑÐ¸ÑÐµ Ð¸ Ð·Ð°Ð¿Ð¾Ð»Ð½ÑÐµÐ¼ ÐµÐµ Ð½ÑÐ»ÑÐ¼Ð¸
+  return id;
+}</span>
+template &lt;typename T&gt;
+int OrientedGraph&lt;T&gt;::getCountVertices()
+{
+  return vertices.size();
+}
+
+template &lt;typename T&gt;
+typename OrientedGraph&lt;T&gt;::vertexID OrientedGraph&lt;T&gt;::addEdge(const vertexData &amp;data1, const vertexData &amp;data2)
+<span style = "background-color:#dfd">{
+  vertexID from = findVertexID(data1); // Ð½Ð°ÑÐ¾Ð´Ð¸Ð¼ Ð¿ÐµÑÐ²ÑÑ Ð²ÐµÑÑÐ¸Ð½Ñ
+  vertexID to = findVertexID(data2);   // Ð½Ð°ÑÐ¾Ð´Ð¸Ð¼ Ð²ÑÐ¾ÑÑÑ Ð²ÐµÑÑÐ¸Ð½Ñ</span>
+
+<span style = "background-color:#dfd">  edgeID edgeId = nextEdgeID++;
+  edges.emplace_back(from, to);</span>
+
+<span style = "background-color:#dfd">  for (auto &amp;row : matrix_incident)</span>
+  {
+<span style = "background-color:#dfd">    row.push_back(0);
+  }
+  matrix_incident[from][edgeId] = 1;
+  matrix_incident[to][edgeId] = -1;</span>
+
+<span style = "background-color:#dfd">  return edgeId;
+}</span>
+template &lt;typename T&gt;
+typename OrientedGraph&lt;T&gt;::vertexID OrientedGraph&lt;T&gt;::findVertexID(const vertexData &amp;data)
+<span style = "background-color:#dfd">{
+  for (const auto &amp;vertex : vertices)</span>
+  {
+<span style = "background-color:#dfd">    if (vertex.second == data)</span>
+    {
+<span style = "background-color:#dfd">      return vertex.first;</span>
+    }
+<span style = "background-color:#dfd">  }
+}</span>
+
+template &lt;typename T&gt;
+int OrientedGraph&lt;T&gt;::getCountEdges()
+<span style = "background-color:#dfd">{
+  return edges.size();
+}</span>
+template &lt;typename T&gt;
+bool OrientedGraph&lt;T&gt;::isHaveVertex(const vertexData &amp;dataForFindVertex)
+<span style = "background-color:#dfd">{
+  return findVertexID(dataForFindVertex) != -1;
+}</span>
+template &lt;typename T&gt;
+bool OrientedGraph&lt;T&gt;::isHaveEdge(const vertexData &amp;data1, const vertexData &amp;data2)
+<span style = "background-color:#dfd">{
+  vertexID id1 = findVertexID(data1);
+  vertexID id2 = findVertexID(data2);
+  return (id1 != -1 &amp;&amp; id2 != -1) ? true : false;
+}</span>
+
+template &lt;typename T&gt;
+void OrientedGraph&lt;T&gt;::removeVertex(const vertexData &amp;dataRemove)
+<span style = "background-color:#dfd">{
+  vertexID id = findVertexID(dataRemove);
+  vector&lt;pair&lt;vertexID, vertexID&gt;&gt; newEdges; // Ð²ÑÐµÐ¼ÐµÐ½Ð½ÑÐ¹ Ð¼Ð°ÑÑÐ¸Ð² ÑÑÐ±ÐµÑ, Ð½Ðµ ÑÐ²ÑÐ·Ð°Ð½Ð½ÑÑ Ñ ÑÐ´Ð°Ð»ÑÐµÐ¼Ð¾Ð¹ Ð²ÐµÑÑÐ¸Ð½Ð¾Ð¹.
+  for (auto &amp;edge : edges)</span>
+  {
+<span style = "background-color:#dfd">    if (edge.first != id &amp;&amp; edge.second != id)</span>
+    {
+<span style = "background-color:#dfd">      newEdges.push_back(edge);</span>
+    }
+<span style = "background-color:#dfd">  }
+  edges = newEdges; // Ð·Ð°Ð¼ÐµÐ½ÑÐµÐ¼ ÑÑÐ°ÑÑÐ¹ ÑÐ¿Ð¸ÑÐ¾Ðº ÑÑÐ±ÐµÑ Ð½Ð° Ð½Ð¾Ð²ÑÐ¹.</span>
+
+<span style = "background-color:#dfd">  matrix_incident.erase(matrix_incident.begin() + id); // ÑÐ´Ð°Ð»ÑÐµÐ¼ ÑÑÑÐ¾ÐºÑ Ñ Ð²ÐµÑÑÐ¸Ð½Ð¾Ð¹
+  for (auto &amp;row : matrix_incident)</span>
+  { // ÑÐ´Ð°Ð»ÑÐµÐ¼ ÑÑÐ¾Ð»Ð±ÐµÑ Ñ ÑÑÐ¾Ð¹ Ð²ÐµÑÑÐ¸Ð½Ð¾Ð¹, Ð¸Ð· ÐºÐ°Ð¶Ð´Ð¾Ð¹ ÑÑÑÐ¾ÐºÐ¸.
+<span style = "background-color:#dfd">    row.erase(row.begin() + id);
+  }
+}</span>
+
+template &lt;typename T&gt;
+void OrientedGraph&lt;T&gt;::removeEdge(const vertexData &amp;data1ForDelete, const vertexData &amp;data2ForDelete)
+<span style = "background-color:#dfd">{
+  vertexID id1 = findVertexID(data1ForDelete);
+  vertexID id2 = findVertexID(data2ForDelete);
+  edgeID edgeIndex = -1;
+  for (size_t i = 0; i &lt; edges.size(); ++i)</span>
+  { // Ð½Ð°ÑÐ¾Ð´Ð¸Ð¼ ÑÐµÐ±ÑÐ¾ Ð¼ÐµÐ¶Ð´Ñ id1 Ð¸ id2
+<span style = "background-color:#dfd">    if (edges[i].first == id1 &amp;&amp; edges[i].second == id2)</span>
+    {
+<span style = "background-color:#dfd">      edgeIndex = i; // ÑÐ¾ÑÑÐ°Ð½ÑÐµÐ¼ ÐµÐ³Ð¾ Ð¸Ð½Ð´ÐµÐºÑ Ð¸ Ð²ÑÑÐ¾Ð´Ð¸Ð¼ Ð¸Ð· ÑÐ¸ÐºÐ»Ð°.
+      break;</span>
+    }
+<span style = "background-color:#fdd">  }</span>
+
+<span style = "background-color:#dfd">  if (edgeIndex != -1)</span>
+  {
+<span style = "background-color:#dfd">    edges.erase(edges.begin() + edgeIndex);
+    for (auto &amp;row : matrix_incident)</span>
+    {
+<span style = "background-color:#dfd">      row.erase(row.begin() + edgeIndex); // ÑÐ´Ð°Ð»ÑÐµÐ¼ ÑÑÐ¾Ð»Ð±ÐµÑ Ñ ÑÑÐ¸Ð¼ ÑÐµÐ±ÑÐ¾Ð¼
+    }
+    --nextEdgeID;</span>
+  }
+<span style = "background-color:#dfd">}</span>
+
+template &lt;typename T&gt;
+void OrientedGraph&lt;T&gt;::printMatrix()
+<span style = "background-color:#dfd">{
+  cout &lt;&lt; "\t";
+  for (size_t i = 0; i &lt; edges.size(); ++i)</span>
+  {
+<span style = "background-color:#dfd">    cout &lt;&lt; "{" &lt;&lt; vertices[edges[i].first] &lt;&lt; "," &lt;&lt; vertices[edges[i].second] &lt;&lt; "} ";
+  }
+  cout &lt;&lt; endl;
+  for (size_t i = 0; i &lt; matrix_incident.size(); ++i)</span>
+  {
+<span style = "background-color:#dfd">    cout &lt;&lt; "v:" &lt;&lt; vertices[i] &lt;&lt; " |     ";</span>
+
+<span style = "background-color:#dfd">    for (int val : matrix_incident[i])</span>
+    {
+<span style = "background-color:#dfd">      cout &lt;&lt; val &lt;&lt; "\t";
+    }
+    cout &lt;&lt; endl;
+  }
+}</span>
+
+template &lt;typename T&gt;
+VertexIterator&lt;T&gt; OrientedGraph&lt;T&gt;::beginVertices()
+<span style = "background-color:#dfd">{
+  return VertexIterator&lt;T&gt;(vertices.begin(), vertices.end());
+}</span>
+template &lt;typename T&gt;
+VertexIterator&lt;T&gt; OrientedGraph&lt;T&gt;::endVertices()
+<span style = "background-color:#dfd">{
+  return VertexIterator&lt;T&gt;(vertices.end(), vertices.end());
+}</span>
+template &lt;typename T&gt;
+EdgeIterator&lt;T&gt; OrientedGraph&lt;T&gt;::beginEdges()
+<span style = "background-color:#dfd">{
+  return EdgeIterator&lt;T&gt;(edges.begin(), edges.end());
+}</span>
+template &lt;typename T&gt;
+EdgeIterator&lt;T&gt; OrientedGraph&lt;T&gt;::endEdges()
+<span style = "background-color:#dfd">{
+  return EdgeIterator&lt;T&gt;(edges.end(), edges.end());
+}</span>
+template &lt;typename T&gt;
+
+EdgeIncidentIterator&lt;T&gt; OrientedGraph&lt;T&gt;::begin_incidentEdges(const vertexData &amp;vertex)
+<span style = "background-color:#dfd">{
+  vertexID vID = findVertexID(vertex);
+  return EdgeIncidentIterator&lt;T&gt;(matrix_incident, edges, vID, 0);
+}</span>
+template &lt;typename T&gt;
+
+EdgeIncidentIterator&lt;T&gt; OrientedGraph&lt;T&gt;::end_incidentEdges(const vertexData &amp;vertex)
+<span style = "background-color:#dfd">{
+  vertexID vID = findVertexID(vertex);</span>
+
+<span style = "background-color:#dfd">  return EdgeIncidentIterator&lt;T&gt;(matrix_incident, edges, vID, edges.size());
+}</span>
+template &lt;typename T&gt;
+VertexAdjacentIterator&lt;T&gt; OrientedGraph&lt;T&gt;::begin_adjacentVertices(const vertexData &amp;vertex)
+<span style = "background-color:#dfd">{
+  vertexID vId = findVertexID(vertex);
+  return VertexAdjacentIterator&lt;T&gt;(edges, vId, vertices, 0);
+}</span>
+template &lt;typename T&gt;
+VertexAdjacentIterator&lt;T&gt; OrientedGraph&lt;T&gt;::end_adjacentVertices(const vertexData &amp;vertex)
+<span style = "background-color:#dfd">{
+  vertexID vId = findVertexID(vertex);
+  return VertexAdjacentIterator&lt;T&gt;(edges, vId, vertices, edges.size());
+}</span></pre>
+        <hr />
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th align="center">
+                        <small>Generated by</small>
+                        <a href="https://github.com/OpenCppCoverage/OpenCppCoverage/releases">
+                            <strong>OpenCppCoverage (Version: 0.9.9.0)</strong>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>
