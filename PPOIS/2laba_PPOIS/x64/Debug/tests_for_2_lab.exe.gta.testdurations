@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>D:\LABY\BSUIR\PPOIS\2laba_PPOIS\x64\Debug\tests_for_2_lab.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="TestClassName.TestDirector" Duration="1" />
+    <TestDuration Test="TestClassName.TestClient" Duration="13" />
+    <TestDuration Test="TestClassCompany.TestDirector" Duration="1" />
+    <TestDuration Test="test_class_acetaminophen.test_order_acetaminophen" Duration="1" />
+    <TestDuration Test="test_class_client.test_client" Duration="1" />
+    <TestDuration Test="test_class_director.test_company" Duration="1" />
+    <TestDuration Test="test_class_mig.test_order_mig" Duration="1" />
+    <TestDuration Test="test_class_order.test_order" Duration="11" />
+    <TestDuration Test="test_class_antigistat.test_order_antigistat" Duration="1" />
+    <TestDuration Test="test_class_aspirin.test_order_aspirin" Duration="1" />
+    <TestDuration Test="test_class_diclofenac.test_order_diclofenac" Duration="1" />
+    <TestDuration Test="test_class_headflex.test_order_headflex" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
